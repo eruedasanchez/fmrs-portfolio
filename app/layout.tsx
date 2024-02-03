@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children } : Readonly<{children: React.ReactNode}>) {
   return (
     <html lang="en">
-      <body className={manrope.className}>{children}</body>
+      <body className={`bg-peach-600 ${manrope.className}`}>{children}</body>
     </html>
   );
 }

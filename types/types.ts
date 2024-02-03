@@ -4,3 +4,8 @@ export interface NavLinksProps{
     label: string,
     containedStyles?: string
 }
+
+export interface NavbarProps{
+    navStyles: string, 
+    ulStyles: string
+}  
