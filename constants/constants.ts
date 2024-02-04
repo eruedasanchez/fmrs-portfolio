@@ -335,19 +335,19 @@ export const socialLinks = [
         id: 1,
         label: "Facebook",
         icon: Facebook,
-        url: "#"
+        url: "https://www.facebook.com/"
     },
     {
         id: 2,
         label: "Linkedin",
         icon: Linkedin,
-        url: "#"
+        url: "https://www.linkedin.com/"
     },
     {
         id: 3,
         label: "Twitter",
         icon: Twitter,
-        url: "#"
+        url: "https://twitter.com/"
     },
 ];
 
@@ -355,17 +355,17 @@ export const contactDetails = [
     {
         id: 1,
         icon: Phone,
-        text: "+92 333 1234567"
+        text: "+47 486 73497"
     },
     {
         id: 2,
         icon: Mail,
-        text: "waseemaofficial@gmail.com"
+        text: "florencia.rs@gmail.com"
     },
     {
         id: 3,
         icon: MapPin,
-        text: "Lahore, Pakistan"
+        text: "Oslo, Norway"
     }
 ];
 
