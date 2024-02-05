@@ -24,37 +24,37 @@ export const skills = [
         id: 1,
         name: "Front-end Development",
         description: "Proficiency in coding the visual aspects of websites using HTML, CSS, and JavaScript to ensure a seamless and attractive user interface.",
-        icon: "/icons/service-1.svg"
+        icon: "/service-1.svg"
     },
     {
         id: 2,
         name: "User Interface - UI Development",
         description: "Ability to craft visually appealing and user-friendly interfaces using code to enhance user engagement and interaction.",
-        icon: "/icons/service-2.svg"
+        icon: "/service-2.svg"
     },
     {
         id: 3,
         name: "User Experience - UX Development",
         description: "Understanding of user behavior and experience principles applied through coding to create seamless and satisfying user interactions.",
-        icon: "/icons/service-3.svg"
+        icon: "/service-3.svg"
     },
     {
         id: 4,
         name: "Responsive Web Development",
         description: "Capability to develop websites that adapt and function flawlessly across various devices and screen sizes using coding techniques.",
-        icon: "/icons/service-4.svg",
+        icon: "/service-4.svg",
     },
     {
         id: 5,  
         name: "Prototyping and Development Testing",
         description: "Ability to code prototypes and conduct thorough testing to visualize and refine website functionalities.",
-        icon: "/icons/service-5.svg"
+        icon: "/service-5.svg"
     },
     {
         id: 6,
         name: "Mobile-Friendly Coding",
         description: "Proficiency in coding practices that ensure websites function seamlessly on mobile devices.",
-        icon: "/icons/service-6.svg"
+        icon: "/service-6.svg"
     }
 ];
 

@@ -36,9 +36,9 @@
   }
 
   .box {
-    @apply bg-peach-400 p-8 tablet:p-12 rounded-full;
+    @apply bg-peach-400 p-8 tablet:p-12 rounded-lg;
   }
-
+  
   .btn {
     @apply flex items-center justify-center gap-2 rounded px-5 py-3.5 capitalize text-grey-700;
   }
