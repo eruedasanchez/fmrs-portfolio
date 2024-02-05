@@ -1,5 +1,6 @@
 import BenefitsContainer from "@/components/BenefitsContainer";
 import Hero from "@/components/Hero";
+import PortfolioContainer from "@/components/PortfolioContainer";
 import SkillsContainer from "@/components/SkillsContainer";
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
             />
             <SkillsContainer/>
             <BenefitsContainer/>
+            <PortfolioContainer/>
         </>
     );
 }

@@ -92,9 +92,9 @@ export const portfolios = [
         title: "Z - Aura Perfume Website",
         link: "#",
         images: [
-            "/images/portfolio-1.png",
-            "/images/portfolio-2.png",
-            "/images/portfolio-3.png"
+            "/portfolio-1.png",
+            "/portfolio-2.png",
+            "/portfolio-3.png"
         ]
     },
     {
@@ -102,9 +102,9 @@ export const portfolios = [
         title: "Forhelp Charity Website",
         link: "#",
         images: [
-            "/images/portfolio-2.png",
-            "/images/portfolio-3.png",
-            "/images/portfolio-1.png"
+            "/portfolio-2.png",
+            "/portfolio-3.png",
+            "/portfolio-1.png"
         ]
     },
     {
@@ -112,9 +112,9 @@ export const portfolios = [
         title: "Skill Bridge Website",
         link: "#",
         images: [
-            "/images/portfolio-3.png",
-            "/images/portfolio-1.png",
-            "/images/portfolio-2.png",
+            "/portfolio-3.png",
+            "/portfolio-1.png",
+            "/portfolio-2.png",
         ]
     },
     {
@@ -122,9 +122,9 @@ export const portfolios = [
         title: "Current Vandi Website",
         link: "#",
         images: [
-            "/images/portfolio-4.png",
-            "/images/portfolio-5.png",
-            "/images/portfolio-6.png",
+            "/portfolio-4.png",
+            "/portfolio-5.png",
+            "/portfolio-6.png",
         ]
     },
     {
@@ -132,9 +132,9 @@ export const portfolios = [
         title: "Fit Fusion Gym Website",
         link: "#",
         images: [
-            "/images/portfolio-5.png",
-            "/images/portfolio-6.png",
-            "/images/portfolio-7.png",
+            "/portfolio-5.png",
+            "/portfolio-6.png",
+            "/portfolio-7.png",
         ]
     },
     {
@@ -142,9 +142,9 @@ export const portfolios = [
         title: "DX Digital Agency Website",
         link: "#",
         images: [
-            "/images/portfolio-6.png",
-            "/images/portfolio-7.png",
-            "/images/portfolio-8.png"
+            "/portfolio-6.png",
+            "/portfolio-7.png",
+            "/portfolio-8.png"
         ]
     },
     {
@@ -152,9 +152,9 @@ export const portfolios = [
         title: "Little Learners Website",
         link: "#",
         images: [
-            "/images/portfolio-7.png",
-            "/images/portfolio-8.png",
-            "/images/portfolio-9.png"
+            "/portfolio-7.png",
+            "/portfolio-8.png",
+            "/portfolio-9.png"
         ]
     },
     {
@@ -162,9 +162,9 @@ export const portfolios = [
         title: "StreamVibe Website",
         link: "#",
         images: [
-            "/images/portfolio-8.png",
-            "/images/portfolio-9.png",
-            "/images/portfolio-4.png"
+            "/portfolio-8.png",
+            "/portfolio-9.png",
+            "/portfolio-4.png"
         ]
     },
     {
@@ -172,9 +172,9 @@ export const portfolios = [
         title: "YourBank Website",
         link: "#",
         images: [
-            "/images/portfolio-9.png",
-            "/images/portfolio-4.png",
-            "/images/portfolio-5.png"
+            "/portfolio-9.png",
+            "/portfolio-4.png",
+            "/portfolio-5.png"
         ]
     }
 ];

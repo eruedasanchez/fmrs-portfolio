@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface NavLinksProps{
     index?: number,
     href: string,
@@ -26,3 +28,25 @@ export interface BenefitsListProps{
     from: number,
     to: number
 }
+
+export interface Portfolio{
+    id: number,
+    title:  string,
+    link: string,
+    images: string[]
+}
+
+export interface PortfolioProps{
+    key: number,
+    portfolio: Portfolio
+}
+
+export interface PortfolioCenterProps{
+    currentImg: string, 
+    portfolio: Portfolio
+}
+
+export interface PortfolioThumbnailsProps extends PortfolioCenterProps{
+    setCurrentImg: React.Dispatch<React.SetStateAction<string>>
+}
+

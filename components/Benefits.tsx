@@ -1,4 +1,3 @@
-import { benefits } from "@/constants/constants";
 import BenefitsList from "./BenefitsList";
 
 const Benefits = () => {
@@ -10,8 +9,8 @@ const Benefits = () => {
                 to={2} 
             />
             <BenefitsList 
-                from={0}
-                to={4}
+                from={2}
+                to={5}
             />
         </>
     );
