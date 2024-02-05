@@ -1,3 +1,4 @@
+import BenefitsContainer from "@/components/BenefitsContainer";
 import Hero from "@/components/Hero";
 import SkillsContainer from "@/components/SkillsContainer";
 
@@ -14,6 +15,7 @@ const HomePage = () => {
                 culinary recommendations, and memorable local experiences, creating lasting memories."
             />
             <SkillsContainer/>
+            <BenefitsContainer/>
         </>
     );
 }

@@ -20,3 +20,9 @@ export interface SectionHeadingProps{
     title: string,
     subtitle: string
 }
+
+export interface BenefitsListProps{
+    containedStyles?: string,
+    from: number,
+    to: number
+}
