@@ -1,3 +1,4 @@
+import { LucideIcon } from "lucide-react";
 import React from "react";
 
 export interface NavLinksProps{
@@ -49,4 +50,24 @@ export interface PortfolioCenterProps{
 export interface PortfolioThumbnailsProps extends PortfolioCenterProps{
     setCurrentImg: React.Dispatch<React.SetStateAction<string>>
 }
+
+export interface SocialLink{
+    id: number,
+    icon: LucideIcon,
+    url: string
+}
+
+export interface Review{
+    id: number,
+    name: string,
+    designation: string,
+    review: string,
+    stars: number,
+    socialLinks: SocialLink[]
+}
+
+export interface SingleReviewProps{
+    review: Review
+}
+
 
