@@ -70,4 +70,17 @@ export interface SingleReviewProps{
     review: Review
 }
 
+export interface AccordionData{
+    id: number,
+    question: string,
+    answer: string
+}
+
+export interface AccordionProps{
+    data: AccordionData[] 
+}
+
+
+
+
 
