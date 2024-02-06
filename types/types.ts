@@ -80,6 +80,26 @@ export interface AccordionProps{
     data: AccordionData[] 
 }
 
+export interface StatsProps{
+    containedStyles: string, 
+    statsDetailStyles?: string, 
+}
+
+export interface StatsDetailProps{
+    quantity: number,
+    title: string,
+    statsDetailStyles?: string 
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

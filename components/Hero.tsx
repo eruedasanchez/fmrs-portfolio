@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Phone } from "lucide-react";
 import { HeroProps } from "@/types/types";
+import Stats from "./Stats";
 
 const Hero = ({header, title, description} : HeroProps) => {
     return (
@@ -22,6 +23,15 @@ const Hero = ({header, title, description} : HeroProps) => {
                         <ArrowRight size={16}/>
                     </Link>
                 </div>
+                {/* stats */}
+                <Stats
+                    containedStyles="bg-peach-400 w-full py-8 px-10 
+                    rounded-l-lg mt-16 flex-wrap gap-12 hidden tablet:flex"
+                />
+                <Stats 
+                    containedStyles="mt-10 grid grid-cols-2 gap-3 tablet:hidden"
+                    statsDetailStyles="py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2"
+                />
             </div>
             {/* right side */}
             <div className="relative w-full tablet:w-1/3 h-[400px] tablet:h-[700px] rounded-b-2xl overflow-hidden">
