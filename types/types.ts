@@ -91,6 +91,12 @@ export interface StatsDetailProps{
     statsDetailStyles?: string 
 }
 
+export interface PortfolioSectionProps{
+    data: Portfolio[], 
+    title: string
+}
+
+
 
 
 
