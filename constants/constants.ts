@@ -395,3 +395,22 @@ export const timeline = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
     }
 ];
+
+export const contactData = [
+    {
+        id: 1,
+        title: "You can Email Me here",
+        contact: "florencia.rs@gmail.com"
+    },
+    {
+        id: 2,
+        title: "Gime Me a Call",
+        contact: "+47 486 73497"
+    },
+    {
+        id: 3,
+        title: "Location",
+        contact: "Oslo, Norway"
+    },
+    
+];

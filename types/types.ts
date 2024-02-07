@@ -96,6 +96,16 @@ export interface PortfolioSectionProps{
     title: string
 }
 
+export interface ContactData{
+    id: number,
+    title: string,
+    contact: string
+}
+
+export interface ContactDetailProps{
+    info: ContactData
+}
+
 
 
 
