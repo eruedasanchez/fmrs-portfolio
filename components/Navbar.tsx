@@ -21,10 +21,7 @@ const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
                     ))
                 }
             </ul>
-            <Link
-                href={"/contact"}
-                className="btn btn-primary"
-            >
+            <Link href={"/contact"} className="btn btn-primary">
                 <Phone size={24}/>
                 Contact me
             </Link>

@@ -44,7 +44,7 @@
   }
 
   .btn-primary {
-    @apply text-peach-100 bg-darkBrown;
+    @apply text-peach-100 bg-brown-700;
   }
 
   input, textarea {

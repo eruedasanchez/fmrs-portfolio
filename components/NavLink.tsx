@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 const NavLink = ({index, href, label, containedStyles} : NavLinksProps) => {
     const pathname = usePathname();
-    const isActive = pathname.startsWith(href);
+    const isActive = pathname === href;
     
     return (
         <li key={index}> 

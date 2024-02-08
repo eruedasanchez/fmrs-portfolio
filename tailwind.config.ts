@@ -35,8 +35,10 @@ const config: Config = {
           600:"#9A66FF",
           700:"#7833FF",
         },
-        brown: "#C5AB9B",
-        darkBrown: "#B27947",
+        brown: {
+          DEFAULT: "#C5AB9B",
+          700: "#B27947"  
+        }, 
         peach: {
           DEFAULT: "#E1DBD1",
           100:"#FDFDFC",
