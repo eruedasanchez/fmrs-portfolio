@@ -13,6 +13,10 @@ const config: Config = {
         tablet: "1040px",
         desktop: "1620px"
       },
+      fontFamily: {
+        'dream-avenue': ['dream_avenueregular', 'sans-serif'],
+        'lora': ['lorabold_italic', 'sans-serif']
+      },
       colors: {
         white: "#ffffff",
         black: "#000000",
@@ -31,6 +35,8 @@ const config: Config = {
           600:"#9A66FF",
           700:"#7833FF",
         },
+        brown: "#C5AB9B",
+        darkBrown: "#B27947",
         peach: {
           DEFAULT: "#E1DBD1",
           100:"#FDFDFC",
@@ -38,7 +44,7 @@ const config: Config = {
           300:"#F9F8F6",
           400:"#F7F6F3",
           500:"#F5F3F0",
-          600:"#EEEBE5",
+          600:"#DFD3CA",
           700:"#EBE7E0",
         },
         grey: {

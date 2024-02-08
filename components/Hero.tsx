@@ -3,6 +3,8 @@ import Image from "next/image";
 import { ArrowRight, Phone } from "lucide-react";
 import { HeroProps } from "@/types/types";
 import Stats from "./Stats";
+import '../app/styles/dream-avenue.css';
+import '../app/styles/lora.css';
 
 const Hero = ({header, title, description} : HeroProps) => {
     return (
@@ -11,12 +13,12 @@ const Hero = ({header, title, description} : HeroProps) => {
             <div className="tablet:w-2/3 mt-10 tablet:mt-0">
                 <div className="flex flex-col gap-3 items-center tablet:items-start max-w-2xl text-center tablet:text-left">
                     <p 
-                        className="px-4 py-2 bg-peach-500 text-gray-600 w-max rounded"
+                        className="font-lora font-light px-4 py-2 bg-peach-500 text-gray-600 w-max rounded"
                         data-aos="fade-down"
                     >
                         {header}
                     </p>
-                    <h1 className="text-grey" data-aos="fade-down" data-aos-delay="100">{title}</h1>
+                    <h1 className="text-grey font-dream-avenue text-5xl font-light" data-aos="fade-down" data-aos-delay="100">{title}</h1>
                     <p className="text-grey-600" data-aos="fade-down" data-aos-delay="200">{description}</p>
                 </div>
                 <div 

@@ -10,7 +10,7 @@ const HomePage = () => {
         <>
             <Hero
                 header="Hello There!"
-                title="Flor RS welcome&apos;s you"
+                title="Florencia welcome&apos;s you"
                 description="As a tour guide, I go beyond pointing out attractions, 
                 inviting travelers to discover authentic experiences. 
                 My portfolio reflects a passion for immersing visitors in cultural richness. 

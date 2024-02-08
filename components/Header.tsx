@@ -7,9 +7,9 @@ import Navbar from "./Navbar";
 
 const Header = () => {
     return (
-        <header className="flex justify-between items-center h-20 max-width border-b border-peach">
+        <header className="flex justify-between items-center h-20 max-width border-b border-brown">
             <Link href={"/"}>
-                <h5 className="text-purple">Flor RS</h5>
+                <h5 className="text-darkBrown">Flor RS</h5>
             </Link>
             <Navbar
                 navStyles="gap-12 max-tablet:hidden"

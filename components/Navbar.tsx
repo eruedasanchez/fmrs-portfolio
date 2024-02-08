@@ -3,11 +3,13 @@ import NavLink from "./NavLink";
 import { NavbarProps } from "@/types/types";
 import { navLinks } from "@/constants/constants";
 import { Phone } from "lucide-react";
+import { Lora } from "next/font/google";
 
+const lora = Lora({ subsets: ["latin"] });
 
 const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
     return (
-        <nav className={`flex items-center ${navStyles}`}>
+        <nav className={`${lora.className} flex items-center ${navStyles}`}>
             <ul className={`flex items-center ${ulStyles}`}>
                 {
                     navLinks.map((link, index) => (
