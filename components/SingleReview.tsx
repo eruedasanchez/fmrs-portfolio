@@ -16,7 +16,7 @@ const SingleReview = ({review} : SingleReviewProps) => {
                             <Link
                                 key={link.id}
                                 href={link.url}
-                                className="text-purple hover:scale-105 transition-transform duration-300"
+                                className="text-brown-700 hover:scale-105 transition-transform duration-300"
                             >
                                 <link.icon strokeWidth={0} fill="currentColor"/>
                             </Link>
@@ -33,7 +33,7 @@ const SingleReview = ({review} : SingleReviewProps) => {
                                 key={index}
                                 size={20}
                                 fill="currentColor"
-                                className={`text-purple ${index < review.stars ? 'opacity-100' : 'opacity-30'}`}
+                                className={`text-brown-700 ${index < review.stars ? 'opacity-100' : 'opacity-30'}`}
                             />
                         ))
                     }

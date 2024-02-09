@@ -1,3 +1,15 @@
-<svg width="36" height="33" viewBox="0 0 36 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.125 9.46875V27.75C1.125 30.08 3.0138 31.9688 5.34375 31.9688H30.6562C32.9862 31.9688 34.875 30.08 34.875 27.75V9.46875M1.125 9.46875V5.25C1.125 2.92005 3.0138 1.03125 5.34375 1.03125H30.6562C32.9862 1.03125 34.875 2.92005 34.875 5.25V9.46875M1.125 9.46875H34.875M5.34375 5.25H5.35781V5.26406H5.34375V5.25ZM9.5625 5.25H9.57656V5.26406H9.5625V5.25ZM13.7812 5.25H13.7953V5.26406H13.7812V5.25Z" stroke="#FDFDFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_15_137)">
+<rect width="24" height="24" fill="none"/>
+<path d="M3 8C3 7.44772 3.44772 7 4 7H8.5L9.5 4H14.5L15.5 7H20C20.5523 7 21 7.44772 21 8V19C21 19.5523 20.5523 20 20 20H4C3.44772 20 3 19.5523 3 19V8Z" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="12" cy="13" r="3" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_15_137">
+<rect width="24" height="24" fill="none"/>
+</clipPath>
+</defs>
 </svg>

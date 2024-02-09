@@ -6,7 +6,7 @@ const TestimonialsContainer = () => {
         <section className="max-width section-padding">
             <SectionHeading
                 title="What my clients say about me"
-                subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit fugiat ipsam, totam qui."
+                subtitle="Discover what travelers have to say about their experiences with my tour guide services."
             />
             <Testimonials/>
         </section>

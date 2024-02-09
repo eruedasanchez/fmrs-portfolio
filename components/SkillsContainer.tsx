@@ -6,7 +6,7 @@ const SkillsContainer = () => {
         <section className="max-width section-padding">
             <SectionHeading
                 title="Creative Skills"
-                subtitle="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae numquam, aspernatur modi animi dolor."
+                subtitle="Discover unique destinations with a guide that sparks creativity and offers memorable experiences."
             />
             <Skills/>
         </section>

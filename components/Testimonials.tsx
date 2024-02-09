@@ -8,6 +8,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SingleReview from "./SingleReview";
 import { useWindowSize } from "@/hooks/useWindowsSize";
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
 
 
 const Testimonials = () => {
@@ -27,18 +30,18 @@ const Testimonials = () => {
     
 
     return (
-        <div>
-            <div className="pb-3 border-b border-peach flex justify-between items-center">
+        <div className={`${lora.className}`}>
+            <div className="pb-3 border-b border-brown flex justify-between items-center">
                 <p>{reviews.length} total reviews</p>
                 <div className="flex gap-2">
                     <button 
-                        className="bg-peach-200 border border-peach p-1 rounded text-grey-700"
+                        className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700"
                         onClick={() => swiperRef.current?.slidePrev()}
                     >
                         <ChevronLeft/>
                     </button>
                     <button 
-                        className="bg-peach-200 border border-peach p-1 rounded text-grey-700"
+                        className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700"
                         onClick={() => swiperRef.current?.slideNext()}
                     >
                         <ChevronRight/>

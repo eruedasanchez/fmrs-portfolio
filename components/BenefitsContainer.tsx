@@ -6,7 +6,7 @@ const BenefitsContainer = () => {
         <section className="max-width section-padding">
             <SectionHeading
                 title="Benifits"
-                subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit fugiat ipsam, totam qui."
+                subtitle="Tapping into the expertise of a tour guide unlocks enriched experiences, hidden gems, and seamless adventures."
             />
             <Benefits/>
         </section>

@@ -1,20 +1,23 @@
 import Link from "next/link";
 import Portfolio from "./Portfolio";
 import SectionHeading from "./SectionHeading";
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
 
 const PortfolioContainer = () => {
     return (
         <section className="max-width section-padding">
             <SectionHeading
                 title="My works"
-                subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit fugiat ipsam, totam qui."
+                subtitle="Explore my journey and discover the destinations I've helped explore and enjoy."
             />
             <Portfolio/>
             <Link 
                 href={"/portfolio"} 
-                className="btn btn-primary mt-10 mx-auto w-max"
+                className={`${lora.className} btn btn-primary mt-10 mx-auto w-max`}
             >
-                View All Projects
+                View My Portfolio
             </Link>
         </section>
     );

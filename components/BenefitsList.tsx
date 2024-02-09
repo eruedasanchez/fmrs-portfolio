@@ -1,5 +1,8 @@
 import { benefits } from "@/constants/constants";
 import { BenefitsListProps } from "@/types/types";
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
 
 const BenefitsList = ({containedStyles, from, to} : BenefitsListProps) => {
     return (
@@ -8,8 +11,8 @@ const BenefitsList = ({containedStyles, from, to} : BenefitsListProps) => {
                 {
                     benefits.slice(from,to).map((benefit, index) => (
                         <div key={index} className="box">
-                            <h5 className="text-grey-700 mb-2">{benefit.name}</h5>
-                            <p className="text-grey-600">{benefit.description}</p>
+                            <h5 className={`${lora.className} text-2xl text-grey-700 mb-2`}>{benefit.name}</h5>
+                            <p className={`${lora.className} text-base text-grey-600`}>{benefit.description}</p>
                         </div>
                     ))
                 }
@@ -18,4 +21,3 @@ const BenefitsList = ({containedStyles, from, to} : BenefitsListProps) => {
 }
 
 export default BenefitsList;
-

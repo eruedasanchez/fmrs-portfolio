@@ -1,5 +1,8 @@
 import { skills } from "@/constants/constants";
 import Image from "next/image";
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
 
 const Skills = () => {
     return (
@@ -8,7 +11,7 @@ const Skills = () => {
             {
                 skills.map((skill, index) => (
                     <div key={index} className="box flex flex-col items-center gap-5">
-                        <div className="w-16 h-16 rounded bg-purple 
+                        <div className="w-16 h-16 rounded bg-brown 
                         flex items-center justify-center flex-shrink-0 mb-2">
                             <Image
                                 src={skill.icon}
@@ -18,8 +21,8 @@ const Skills = () => {
                             />
                         </div>
                         <div className="text-center">
-                            <h4 className="text-grey-700 mb-2">{skill.name}</h4>
-                            <p className="text-grey-600">{skill.description}</p>
+                            <h4 className={`${lora.className} text-2xl text-grey-700 mb-2`}>{skill.name}</h4>
+                            <p className={`${lora.className} text-base text-grey-600`}>{skill.description}</p>
                         </div>
                     </div>
                 ))

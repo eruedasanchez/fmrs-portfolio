@@ -1,11 +1,14 @@
 import { PortfolioCenterProps } from "@/types/types";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
 
 const PortfolioCenter = ({currentImg, portfolio} : PortfolioCenterProps) => {
     return (
         <>
-            <h4 className="mb-5">{portfolio.title}</h4>
+            <h4 className={`${lora.className} text-2xl mb-5`}>{portfolio.title}</h4>
             <div className="relative w-full h-80 rounded-lg overflow-hidden 
             group cursor-pointer mb-5 ">
                 <Image
