@@ -372,39 +372,39 @@ export const contactDetails = [
 export const timeline = [
     {
         id: 1,
-        title: "Senior Web Developer",
-        duration: "2018 - Present",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+        title: "Tourist Guide - Oslo, Norway",
+        duration: "2020 - Present",
+        description: "Planning, organization of private tours and guided visits to the notable places of the Norwegian capital such as the Folk Museum, the Viking Museum and the Royal Palace of Oslo."
     },
     {
         id: 2,
-        title: "Web Developer",
-        duration: "2015 - 2018",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+        title: "Tourist Guide - Buenos Aires Bus",
+        duration: "2015 - 2020",
+        description: "Tourist bus that runs through the most emblematic neighborhoods of the city of Buenos Aires with panoramic views to appreciate historical places, cultural spaces and unique neighborhoods full of Argentine culture."
     },
     {
         id: 3,
-        title: "Junior Web Developer",
+        title: "Tourist Guide - Sturla Viajes",
         duration: "2013 - 2015",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+        description: "River passenger transportation in Delta. Coordination, attention and administration of operational and satellite navigation systems in the units, providing us with immediate information about the location, speed and itinerary."
     },
     {
         id: 4,
-        title: "Degree in Computer Science",
+        title: "Degree in Tourism - University of Moron",
         duration: "2010 - 2013",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+        description: "Internships and professional practices applying knowledge in real work environments and acquiring practical experience in the tourism industry."
     }
 ];
 
 export const contactData = [
     {
         id: 1,
-        title: "You can Email Me here",
+        title: "You can email me here",
         contact: "florencia.rs@gmail.com"
     },
     {
         id: 2,
-        title: "Gime Me a Call",
+        title: "Gime me a call",
         contact: "+47 486 73497"
     },
     {

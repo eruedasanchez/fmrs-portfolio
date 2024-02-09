@@ -3,11 +3,14 @@ import ContactDetail from "./ContactDetail";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
 import FaqsContainer from "./FaqsContainer";
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
 
 const ContactBody = () => {
     return (
         <>
-            <section className="max-width section-padding flex max-tablet:flex-col gap-16">
+            <section className={`${lora.className} max-width section-padding flex max-tablet:flex-col gap-16`}>
                 <div className="tablet:max-w-md w-full">
                     <div className="space-y-4">
                         {
@@ -25,9 +28,11 @@ const ContactBody = () => {
                                 <Link
                                     href={link.url}
                                     key={index}
-                                    className="w-10 h-10 bg-purple text-peach flex justify-center items-center rounded"
+                                    className="w-10 h-10 bg-peach border border-brown-700 rounded-full text-brown-700 flex justify-center items-center"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    <link.icon strokeWidth={0} fill="currentColor"/>
+                                    <link.icon size={19} strokeWidth={0} fill="currentColor"/>
                                 </Link>
                             ))
                         }

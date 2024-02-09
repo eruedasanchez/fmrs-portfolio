@@ -6,7 +6,7 @@ const MilestoneContainer = () => {
         <section className="max-width section-padding">
             <SectionHeading
                 title="Milestone of my career"
-                subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit fugiat ipsam, totam qui."
+                subtitle="Explore the highlights of my professional journey, showcasing significant achievements and enriching experiences."
             />
             <Milestone/>
         </section>
