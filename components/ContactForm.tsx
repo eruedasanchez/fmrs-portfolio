@@ -13,7 +13,7 @@ type Inputs = {
 };
 
 const ContactForm = () => {
-    const { register, handleSubmit, watch, formState: {errors}} = useForm<Inputs>({
+    const { register, handleSubmit, formState: {errors}} = useForm<Inputs>({
         resolver: zodResolver(userContactSchema)
     });
 
@@ -26,68 +26,69 @@ const ContactForm = () => {
                 onSubmit={handleSubmit(data => {console.log('data completada:', data)})}
             >
                 <div className="flex gap-5 max-tablet:flex-col">
-                    <label htmlFor="first-name" hidden>First Name</label>
-                    <input 
-                        type="text" 
-                        id="firstName" 
-                        placeholder="First Name"
-                        {...register('firstName')}
-                    />
-                    {
-                        errors.firstName?.message && <p>{errors.firstName?.message}</p>
-                    }
-                    
-                    <label htmlFor="last-name" hidden>Last Name</label>
-                    <input 
-                        type="text" 
-                        id="lastName" 
-                        placeholder="Last Name"
-                        {...register('lastName')}
-                    />
-                    {
-                        errors.lastName?.message && <p>{errors.lastName?.message}</p>
-                    }
+                    <div className="w-full">
+                        <input 
+                            type="text" 
+                            id="firstName" 
+                            placeholder="First Name"
+                            {...register('firstName')}
+                            className={`${errors.firstName?.message && 'w-full border-2 border-red-400 bg-red-200'}`}
+                        />
+                        {
+                            errors.firstName?.message && <p className="text-sm text-red-600 px-1 mt-1">{errors.firstName?.message}</p>
+                        }
+                    </div>
+                    <div className="w-full">
+                        <input 
+                            type="text" 
+                            id="lastName" 
+                            placeholder="Last Name"
+                            {...register('lastName')}
+                            className={`${errors.lastName?.message && 'border-2 border-red-400 bg-red-200'}`}
+                        />
+                        {
+                            errors.lastName?.message && <p className="text-sm text-red-600 px-1 mt-1">{errors.lastName?.message}</p>
+                        }
+                    </div>
                 </div>
-                <div className="flex gap-5 max-tablet:flex-col">
-                    <label htmlFor="email" hidden>Email</label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        placeholder="Email"
-                        {...register('email')}
-                    />
-                    {
-                        errors.email?.message && <p>{errors.email?.message}</p>
-                    }
+                <div className="flex gap-3 max-tablet:flex-col">
+                    <div className="w-full"> 
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="Email"
+                            {...register('email')}
+                            className={`${errors.email?.message && 'border-2 border-red-400 bg-red-200'}`}
+                        />
+                        {
+                            errors.email?.message && <p className="text-sm text-red-600 px-1 mt-1">{errors.email?.message}</p>
+                        }
+                    </div>
                     
-                    <label htmlFor="phone" hidden>Phone</label>
-                    <input 
-                        type="text" 
-                        id="phone" 
-                        placeholder="Phone"
-                        {...register('phone')}
-                    />
-                    {
-                        errors.phone?.message && <p>{errors.phone?.message}</p>
-                    }
+                    <div className="w-full">
+                        <input 
+                            type="text" 
+                            id="phone" 
+                            placeholder="Phone"
+                            {...register('phone')}
+                            className={`${errors.phone?.message && 'border-2 border-red-400 bg-red-200'}`}
+                        />
+                        {
+                            errors.phone?.message && <p className="text-sm text-red-600 px-1 mt-1">{errors.phone?.message}</p>
+                        }
+                    </div>
                 </div>
-                
-                <label htmlFor="message" hidden>Message</label>
                 <textarea 
                     id="message" 
                     placeholder="Message" 
-                    className="min-h-[200px]"
                     {...register('message')}
+                    className={`min-h-[200px] ${errors.message?.message && 'border-2 border-red-400 bg-red-200'}`}
                 ></textarea>
                 {
-                        errors.message?.message && <p>{errors.message?.message}</p>
+                        errors.message?.message && <p className="text-sm text-red-600 px-1 mt-1">{errors.message?.message}</p>
                     }
                 <button type="submit" className="btn btn-primary">Send</button>
             </form>
-
-            <div>
-                {JSON.stringify(watch(), null, 2)}
-            </div>
         </div>
     );
 }
