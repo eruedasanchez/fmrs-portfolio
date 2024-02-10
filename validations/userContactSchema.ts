@@ -2,8 +2,6 @@ import { z } from 'zod';
 
 const validFirstNameRegex = /^[A-Za-z\s]+$/;
 
-
-
 export const userContactSchema = z.object({
     firstName: z
         .string()

@@ -3,6 +3,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { userContactSchema } from "@/validations/userContactSchema";
+import { sendEmail } from "@/actions/sendEmail";
 
 type Inputs = {
     firstName: string, 
@@ -17,31 +18,32 @@ const ContactForm = () => {
         resolver: zodResolver(userContactSchema)
     });
 
-    console.log('errors:', errors);
+    // console.log('errors:', errors);
+    
     
     return (
         <div className="box w-full">
             <form
+                action={async (formData) => { await sendEmail(formData)}}
                 className="space-y-5"
-                onSubmit={handleSubmit(data => {console.log('data completada:', data)})}
+                // onSubmit={handleSubmit(data => {console.log('data completada:', data)})}
             >
-                <div className="flex gap-5 max-tablet:flex-col">
-                    <div className="w-full">
+                <div className="flex gap-2 max-tablet:flex-col">
+                    <div className="w-full mb-2">
                         <input 
                             type="text" 
-                            id="firstName" 
                             placeholder="First Name"
                             {...register('firstName')}
                             className={`${errors.firstName?.message && 'w-full border-2 border-red-400 bg-red-200'}`}
+                            
                         />
                         {
                             errors.firstName?.message && <p className="text-sm text-red-600 px-1 mt-1">{errors.firstName?.message}</p>
                         }
                     </div>
-                    <div className="w-full">
+                    <div className="w-full mb-2 max-tablet:mb-4">
                         <input 
                             type="text" 
-                            id="lastName" 
                             placeholder="Last Name"
                             {...register('lastName')}
                             className={`${errors.lastName?.message && 'border-2 border-red-400 bg-red-200'}`}
@@ -51,11 +53,10 @@ const ContactForm = () => {
                         }
                     </div>
                 </div>
-                <div className="flex gap-3 max-tablet:flex-col">
-                    <div className="w-full"> 
+                <div className="flex gap-2 max-tablet:flex-col">
+                    <div className="w-full mb-2"> 
                         <input 
                             type="email" 
-                            id="email" 
                             placeholder="Email"
                             {...register('email')}
                             className={`${errors.email?.message && 'border-2 border-red-400 bg-red-200'}`}
@@ -65,10 +66,9 @@ const ContactForm = () => {
                         }
                     </div>
                     
-                    <div className="w-full">
+                    <div className="w-full mb-2 max-tablet:mb-4">
                         <input 
                             type="text" 
-                            id="phone" 
                             placeholder="Phone"
                             {...register('phone')}
                             className={`${errors.phone?.message && 'border-2 border-red-400 bg-red-200'}`}
@@ -79,10 +79,9 @@ const ContactForm = () => {
                     </div>
                 </div>
                 <textarea 
-                    id="message" 
                     placeholder="Message" 
                     {...register('message')}
-                    className={`min-h-[200px] ${errors.message?.message && 'border-2 border-red-400 bg-red-200'}`}
+                    className={`min-h-[200px] mb-2 ${errors.message?.message && 'border-2 border-red-400 bg-red-200'}`}
                 ></textarea>
                 {
                         errors.message?.message && <p className="text-sm text-red-600 px-1 mt-1">{errors.message?.message}</p>
