@@ -50,5 +50,55 @@
   input, textarea {
     @apply w-full rounded px-6 py-4 border border-peach-700 bg-peach-500 outline-none text-sm text-grey-700;
   }
+  
+  @keyframes sliderReveal {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
+  @keyframes sliderInLeft {
+    0% {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slider-reveal {
+    opacity: 0;
+    animation: sliderReveal 1.5s ease forwards;
+  }
+
+  .slider-in-left {
+    opacity: 0;
+    animation: sliderInLeft 1s ease-in 1s 1 normal both;
+  }
+  
+  .delay-250ms { animation-delay: 250ms; }
+  
+  .delay-500ms { animation-delay: 500ms; }
+  
+  .delay-750ms { animation-delay: 750ms; }
+  
+  .delay-1000ms { animation-delay: 1000ms; }
+
+  /* .btn-transition{ */
+    /* transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+    /* transition: all 0.3s; */
+    /* transform: translateY(-10px);
+
+  } */
 }
+

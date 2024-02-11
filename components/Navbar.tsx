@@ -21,7 +21,12 @@ const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
                     ))
                 }
             </ul>
-            <Link href={"/contact"} className="btn btn-primary">
+            <Link 
+                href={"/contact"} 
+                className="btn btn-primary
+                hover:bg-peach-500 hover:text-brown-700 
+                hover:border hover:border-brown-700"
+            >
                 <Phone size={24}/>
                 Contact me
             </Link>
