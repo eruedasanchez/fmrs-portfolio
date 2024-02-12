@@ -1,13 +1,16 @@
 'use client';
 
+import { useEffect, useRef, useState } from "react";
 import { useWindowSize } from "@/hooks/useWindowsSize";
 import { PortfolioSectionProps } from "@/types/types";
-import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import PortfolioItem from "./PortfolioItem";
+import { Lora } from "next/font/google";
+
+const lora = Lora({ subsets: ["latin"] });
 
 const PortfolioSection = ({ data, title } : PortfolioSectionProps) => {
     const swiperRef = useRef<SwiperType>();
@@ -25,18 +28,20 @@ const PortfolioSection = ({ data, title } : PortfolioSectionProps) => {
     }, [width]);
     
     return (
-        <section className="max-width section-padding">
-            <div className="pb-3 border-b border-peach flex justify-between items-center">
+        <section className={`${lora.className} max-width section-padding`}>
+            <div className="pb-3 border-b border-brown flex justify-between items-center">
                 <p>{title}</p>
                 <div className="flex gap-2">
                     <button 
-                        className="bg-peach-200 border border-peach p-1 rounded text-grey-700"
+                        className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
+                        hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                         onClick={() => swiperRef.current?.slidePrev()}
                     >
                         <ChevronLeft/>
                     </button>
                     <button 
-                        className="bg-peach-200 border border-peach p-1 rounded text-grey-700"
+                        className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
+                        hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                         onClick={() => swiperRef.current?.slideNext()}
                     >
                         <ChevronRight/>

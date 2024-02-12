@@ -2,7 +2,7 @@ import ContactContainer from "@/components/ContactContainer";
 import { Metadata } from "next";
 
 export const metadata : Metadata = {
-    title: "Contact - Flor RS"
+    title: "Contact | Florencia Rueda Sanchez"
 };
 
 const ContactPage = () => {

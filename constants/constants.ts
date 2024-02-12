@@ -92,9 +92,9 @@ export const portfolios = [
         title: "Buenos Aires Bus - BA",
         link: "#",
         images: [
-            "/portfolio-1.png",
-            "/portfolio-2.png",
-            "/portfolio-3.png"
+            "/ba-bus-1.jpg",
+            "/ba-bus-2.jpg",
+            "/ba-bus-3.jpg"
         ]
     },
     {
@@ -102,9 +102,9 @@ export const portfolios = [
         title: "Sturla Viajes - BA",
         link: "#",
         images: [
-            "/portfolio-2.png",
-            "/portfolio-3.png",
-            "/portfolio-1.png"
+            "/delta-1.jpg",
+            "/delta-2.jpg",
+            "/delta-3.jpeg"
         ]
     },
     {
@@ -112,69 +112,69 @@ export const portfolios = [
         title: "Wine Route - Mendoza",
         link: "#",
         images: [
-            "/portfolio-3.png",
-            "/portfolio-1.png",
-            "/portfolio-2.png",
+            "/wine-tour-1.jpg",
+            "/wine-tour-2.png",
+            "/wine-tour-3.jpg",
         ]
     },
     {
         id: 4,
-        title: "Current Vandi Website",
+        title: "Circuito Chico - Bariloche",
         link: "#",
         images: [
-            "/portfolio-4.png",
-            "/portfolio-5.png",
-            "/portfolio-6.png",
+            "/bariloche-1.jpg",
+            "/bariloche-2.jpeg",
+            "/bariloche-3.jpeg",
         ]
     },
     {
         id: 5,
-        title: "Fit Fusion Gym Website",
+        title: "Iguazu Falls - Misiones",
         link: "#",
         images: [
-            "/portfolio-5.png",
-            "/portfolio-6.png",
-            "/portfolio-7.png",
+            "/cataratas-1.jpg",
+            "/cataratas-2.jpg",
+            "/cataratas-3.jpg",
         ]
     },
     {
         id: 6,
-        title: "DX Digital Agency Website",
+        title: "Purmamarca - Jujuy",
         link: "#",
         images: [
-            "/portfolio-6.png",
-            "/portfolio-7.png",
-            "/portfolio-8.png"
+            "/purmamarca-1.jpg",
+            "/purmamarca-2.jpeg",
+            "/purmamarca-3.jpeg"
         ]
     },
     {
         id: 7,
-        title: "Little Learners Website",
+        title: "Perito Moreno Glacier - Santa Cruz",
         link: "#",
         images: [
-            "/portfolio-7.png",
-            "/portfolio-8.png",
-            "/portfolio-9.png"
+            "/perito-moreno-1.jpg",
+            "/perito-moreno-2.jpeg",
+            "/perito-moreno-3.jpg"
         ]
     },
     {
         id: 8,
-        title: "StreamVibe Website",
+        title: "City of Oslo - Norway",
         link: "#",
         images: [
-            "/portfolio-8.png",
-            "/portfolio-9.png",
-            "/portfolio-4.png"
+            "/oslo-1.jpg",
+            "/oslo-2.jpg",
+            "/oslo-3.jpg"
         ]
     },
     {
         id: 9,
-        title: "YourBank Website",
+        title: "Amsterdam -  Netherlands",
         link: "#",
         images: [
-            "/portfolio-9.png",
-            "/portfolio-4.png",
-            "/portfolio-5.png"
+            "/amstherdam-1.jpg",
+            "/amstherdam-2.jpg",
+            "/amstherdam-3.jpg"
         ]
     }
 ];
@@ -182,9 +182,9 @@ export const portfolios = [
 export const reviews = [
     {
         id: 1,
-        name: "Sarah Thompson",
-        designation: "CEO Texo",
-        review: "Waseem Anjum is an incredibly talented web develioper. His attention to detail and creative flair are unmatched. He took my website from ordinary to extraordinary, capturing the essence of my brand perfectly. Working with Waseem was a breeze, as he listened to my needs and provided expert guidance throughout the design process. I highly recommend Waseem for anyone looking to elevate their online presence.",
+        name: "Marcos Molares",
+        designation: "Buenos Aires Bus - Partner",
+        review: "Florencia is the very definition of professionalism and dedication. Working with her was a real pleasure. I would not hesitate to recommend Florencia as a colleague to anyone looking for an exceptional coworker in the tourism industry.",
         stars: 5,
         socialLinks: [
             {
@@ -206,33 +206,33 @@ export const reviews = [
     },
     {
         id: 2,
-        name: "Emily Roberts",
-        designation: "CEO Texo",
-        review: "Waseem Anjum is an incredibly talented web develioper. His attention to detail and creative flair are unmatched. He took my website from ordinary to extraordinary, capturing the essence of my brand perfectly. Working with Waseem was a breeze, as he listened to my needs and provided expert guidance throughout the design process. I highly recommend Waseem for anyone looking to elevate their online presence.",
+        name: "German Martinez",
+        designation: "Buenos Aires Bus - Tourist",
+        review: "An incredible experience! Florencia not only has a deep knowledge of the history and culture of the region, but she also has an infectious passion for sharing it. Their enthusiasm made every moment memorable. Their vivid stories and fascinating anecdotes brought the places we visited to life. Plus, their personalized attention and kindness made us feel like we were exploring with a lifelong friend.",
         stars: 3,
         socialLinks: [
             {
                 id: 1,
                 icon: Facebook,
-                url: "#"
+                url: "https://www.facebook.com"
             },
             {
                 id: 2,
                 icon: Linkedin,
-                url: "#",
+                url: "https://www.linkedin.com/",
             },
             {
                 id: 3,
                 icon: Twitter,
-                url: "#",
+                url: "https://twitter.com/",
             }
         ]
     },
     {
         id: 3,
-        name: "Emily Roberts",
-        designation: "CEO Texo",
-        review: "Waseem Anjum is an incredibly talented web develioper. His attention to detail and creative flair are unmatched. He took my website from ordinary to extraordinary, capturing the essence of my brand perfectly. Working with Waseem was a breeze, as he listened to my needs and provided expert guidance throughout the design process. I highly recommend Waseem for anyone looking to elevate their online presence.",
+        name: "Julieta Gonzalez",
+        designation: "Sturla Viajes - Tourist",
+        review: "Florencia is simply exceptional in her role as a river tourism guide in the delta. Their experience and skill in leading travelers through canals and waterways is truly amazing. Every moment of the trip was filled with fascinating discoveries and exciting adventures. An unforgettable experience that I would recommend to anyone wishing to explore this wonderful area!",
         stars: 5,
         socialLinks: [
             {
@@ -254,9 +254,9 @@ export const reviews = [
     },
     {
         id: 4,
-        name: "Emily Roberts",
-        designation: "CEO Texo",
-        review: "Waseem Anjum is an incredibly talented web develioper. His attention to detail and creative flair are unmatched. He took my website from ordinary to extraordinary, capturing the essence of my brand perfectly. Working with Waseem was a breeze, as he listened to my needs and provided expert guidance throughout the design process. I highly recommend Waseem for anyone looking to elevate their online presence.",
+        name: "Romina Fernandez",
+        designation: "Oslo Tourism - Partner",
+        review: "My deepest gratitude to Florencia for her incredible help and guidance during my first experiences as a tour guide in Oslo, Norway. Their unconditional support and knowledge were fundamental to my success. Her patience, kindness, and dedication are invaluable, and I am eternally grateful to have had the opportunity to learn from her.",
         stars: 4,
         socialLinks: [
             {
@@ -278,9 +278,9 @@ export const reviews = [
     },
     {
         id: 5,
-        name: "Emily Roberts",
-        designation: "CEO Texo",
-        review: "Waseem Anjum is an incredibly talented web develioper. His attention to detail and creative flair are unmatched. He took my website from ordinary to extraordinary, capturing the essence of my brand perfectly. Working with Waseem was a breeze, as he listened to my needs and provided expert guidance throughout the design process. I highly recommend Waseem for anyone looking to elevate their online presence.",
+        name: "Solange Suhadja",
+        designation: "Private Client - Amsterdam",
+        review: "My experience with Florencia in Amsterdam was simply exceptional! From the moment we met, I was impressed by her warmth, professionalism, and deep knowledge of the city. Not only did Florencia take us to the most iconic places in Amsterdam, she also shared fascinating stories and historical details that made every moment even more memorable. His passion for tourism and commitment to excellence were reflected in every aspect of our tour.",
         stars: 4,
         socialLinks: [
             {

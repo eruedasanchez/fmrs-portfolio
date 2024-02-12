@@ -30,7 +30,8 @@ const Footer = () => {
                             <Link
                                 key={index}
                                 href={link.url}
-                                className="w-10 h-10 bg-peach border border-brown-700 rounded-full text-brown-700 flex justify-center items-center"
+                                className="w-10 h-10 bg-peach border border-brown-700 text-brown-700 rounded-full flex justify-center items-center
+                                hover:bg-brown-700 hover:border hover:border-peach hover:text-peach"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

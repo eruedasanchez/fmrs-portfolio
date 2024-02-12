@@ -3,8 +3,8 @@ import PortfolioSite from "@/components/PortfolioSite";
 import { portfolios } from "@/constants/constants";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: "Portfolio | Flor RS"
+export const metadata : Metadata = {
+    title: "Portfolio | Florencia Rueda Sanchez"
 };
 
 const PortfolioPage = () => {
@@ -13,7 +13,7 @@ const PortfolioPage = () => {
             <PortfolioSite/>
             <PortfolioSection
                 data={portfolios}
-                title="Projects Done in 2023"
+                title="Guided destinations in my career"
             />
         </>
     )
