@@ -14,7 +14,7 @@ const Hero = ({header, title, description} : HeroProps) => {
         <section className="flex items-center max-width flex-col-reverse tablet:flex-row mb-10">
             <div className="tablet:w-2/3 mt-10 tablet:mt-0">
                 <div className="flex flex-col gap-3 items-center tablet:items-start 
-                max-w-2xl text-center tablet:text-left slider-reveal-container">
+                max-w-2xl text-center tablet:text-left">
                     <p className="font-lora font-light px-4 py-2 bg-peach-500 
                     text-gray-600 w-max rounded slider-reveal section-subtitle slider-reveal delay-250ms">
                         {header}

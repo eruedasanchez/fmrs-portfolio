@@ -20,11 +20,11 @@ const MilestoneHero = () => {
                 <div className="tablet:w-1/2">
                     <div className="space-y-3 max-tablet:text-center flex flex-col">
                         <p className="font-lora font-light px-4 py-2 bg-peach-500 text-grey-600 w-max rounded mb-1
-                        tablet:w-max max-tablet:mx-auto">
+                        tablet:w-max max-tablet:mx-auto slider-reveal delay-250ms">
                             Welcome to the world of captivating Tourist Guide!
                         </p>
-                        <h1 className="font-dream-avenue text-4xl tracking-wide font-light text-grey-700">I&apos;m Florencia Rueda Sanchez</h1>
-                        <p className={`${lora.className} text-grey-600`}>
+                        <h1 className="font-dream-avenue text-4xl tracking-wide font-light text-grey-700 slider-reveal delay-500ms">I&apos;m Florencia Rueda Sanchez</h1>
+                        <p className={`${lora.className} text-grey-600 slider-reveal delay-750ms`}>
                             Passionate about exploring and sharing unique experiences in every corner of the world. 
                             With a personalized approach and deep local knowledge, I invite you to immerse yourself 
                             in authentic adventures and uncover the hidden treasures of each destination through my 

@@ -25,7 +25,8 @@ const Faqs = () => {
                 </div>
                 <Link
                     href={"/contact"}
-                    className="btn btn-primary w-max"
+                    className="btn btn-primary w-max
+                    hover:bg-peach-500 hover:text-brown-700 hover:border hover:border-brown-700"
                 >
                     Contact Me <ArrowRight/>
                 </Link>

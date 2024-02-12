@@ -10,9 +10,9 @@ const BenefitsList = ({containedStyles, from, to} : BenefitsListProps) => {
             tablet:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3 tablet:gap-6 ${containedStyles}`}>
                 {
                     benefits.slice(from,to).map((benefit, index) => (
-                        <div key={index} className="box">
+                        <div key={index} className="box hover:scale-95">
                             <h5 className={`${lora.className} text-2xl text-grey-700 mb-2`}>{benefit.name}</h5>
-                            <p className={`${lora.className} text-base text-grey-600`}>{benefit.description}</p>
+                            <p className={`${lora.className} text-base text-grey-600 hover:scale-105`}>{benefit.description}</p>
                         </div>
                     ))
                 }

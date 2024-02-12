@@ -15,7 +15,8 @@ const PortfolioContainer = () => {
             <Portfolio/>
             <Link 
                 href={"/portfolio"} 
-                className={`${lora.className} btn btn-primary mt-10 mx-auto w-max`}
+                className={`${lora.className} btn btn-primary mt-10 mx-auto w-max 
+                hover:bg-peach-500 hover:text-brown-700 hover:border hover:border-brown-700`}
             >
                 View My Portfolio
             </Link>

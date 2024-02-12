@@ -33,15 +33,17 @@ const Testimonials = () => {
         <div className={`${lora.className}`}>
             <div className="pb-3 border-b border-brown flex justify-between items-center">
                 <p>{reviews.length} total reviews</p>
-                <div className="flex gap-2">
+                <div className="flex gap-3">
                     <button 
-                        className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700"
+                        className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
+                        hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                         onClick={() => swiperRef.current?.slidePrev()}
                     >
                         <ChevronLeft/>
                     </button>
                     <button 
-                        className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700"
+                        className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
+                        hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                         onClick={() => swiperRef.current?.slideNext()}
                     >
                         <ChevronRight/>

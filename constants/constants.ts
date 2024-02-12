@@ -22,38 +22,38 @@ export const navLinks = [
 export const skills = [
     {
         id: 1,
-        name: "Front-end Development",
-        description: "Proficiency in coding the visual aspects of websites using HTML, CSS, and JavaScript to ensure a seamless and attractive user interface.",
+        name: "Destination Knowledge",
+        description: "In-depth knowledge about tourist places, history, culture, gastronomy and other relevant aspects of the destinations you guide.",
         icon: "/service-1.svg"
     },
     {
         id: 2,
-        name: "User Interface - UI Development",
-        description: "Ability to craft visually appealing and user-friendly interfaces using code to enhance user engagement and interaction.",
+        name: "Knowledge of tourism standards and regulations",
+        description: "Solid knowledge of local tourism standards and regulations to ensure compliance with laws and safety standards.",
         icon: "/service-2.svg"
     },
     {
         id: 3,
-        name: "User Experience - UX Development",
-        description: "Understanding of user behavior and experience principles applied through coding to create seamless and satisfying user interactions.",
+        name: "Communication Skills",
+        description: "Excellent communication, able to convey information in a clear, interesting and engaging way to people from different cultures and backgrounds.",
         icon: "/service-3.svg"
     },
     {
         id: 4,
-        name: "Responsive Web Development",
-        description: "Capability to develop websites that adapt and function flawlessly across various devices and screen sizes using coding techniques.",
+        name: "Tourist photography",
+        description: "Skills such as framing, composition, light management and basic technical knowledge of photography to obtain impressive images that tourists can take with them as a souvenir of their experience.",
         icon: "/service-4.svg",
     },
     {
         id: 5,  
-        name: "Prototyping and Development Testing",
-        description: "Ability to code prototypes and conduct thorough testing to visualize and refine website functionalities.",
+        name: "Languages",
+        description: "Skills in several languages ​​such as Spanish, English, Portuguese and Italian to communicate with international tourists.",
         icon: "/service-5.svg"
     },
     {
         id: 6,
-        name: "Mobile-Friendly Coding",
-        description: "Proficiency in coding practices that ensure websites function seamlessly on mobile devices.",
+        name: "Orienteering and Navigation",
+        description: "Strong orientation and navigation skills to guide tourists safely and efficiently through unfamiliar destinations.",
         icon: "/service-6.svg"
     }
 ];
@@ -61,18 +61,18 @@ export const skills = [
 export const benefits = [
     {
         id: 1,
-        name: "Customized Development Aligned with Your Brand",
-        description: "I recognize the importance of translating your brand identity into a unique website. By closely collaborating with you, I ensure that your website embodies your brand's personality, values, and objectives. The result is a custom-developed platform that distinguishes you from competitors and resonates with your target audience.",
+        name: "Local knowledge",
+        description: "I have deep knowledge about the destinations you visited. I can provide detailed information about local history, culture, cuisine and points of interest that tourists may not otherwise know about.",
     },
     {
         id: 2,
-        name: "Creative Coding for Visitor Engagement",
-        description: "With a strong sense of aesthetics and a creative drive, I specialize in coding visually stunning and engaging websites. By integrating elegant code structures, interactive elements, and strategic design principles, I craft an immersive and impactful user experience. Your website will captivate visitors, enhancing your brand's credibility and professionalism.",
+        name: "Personalized experience",
+        description: "I can adapt the tours according to the specific interests and needs of tourists. Additionally, I offer personalized recommendations and suggestions on what to see and do based on individual interests.",
     },
     {
         id: 3,
-        name: "User-Centric Development for Enhanced Experience",
-        description: "I prioritize user experience (UX) development, focusing on your visitors throughout the coding process. Through extensive research and user testing methodologies, I ensure that your website is intuitive, easy to navigate, and guides users effectively. The outcome is a gratifying user journey that boosts engagement and conversions."
+        name: "Privileged access",
+        description: "I have privileged access to certain places and activities that may not be available to the general public. This may include access to historical sites, exclusive events or unique experiences that enrich the tourist's visit."
     },
     {
         id: 4,
@@ -81,15 +81,15 @@ export const benefits = [
     },
     {
         id: 5,
-        name: "Proficiency in Advanced Coding Technologies",
-        description: "With expertise in HTML, CSS, JavaScript, and cutting-edge front-end technologies, I possess the technical prowess to execute your design concepts. From seamless animations to interactive features, I leverage the latest coding technologies to elevate user engagement and deliver a dynamic user experience."
+        name: "Safety and Comfort",
+        description: "Provide a safe and comfortable environment for tourists when navigating unknown destinations. They know safe areas and I help them avoid potentially dangerous situations."
     }
 ];
 
 export const portfolios = [
     {
         id: 1,
-        title: "Z - Aura Perfume Website",
+        title: "Buenos Aires Bus - BA",
         link: "#",
         images: [
             "/portfolio-1.png",
@@ -99,7 +99,7 @@ export const portfolios = [
     },
     {
         id: 2,
-        title: "Forhelp Charity Website",
+        title: "Sturla Viajes - BA",
         link: "#",
         images: [
             "/portfolio-2.png",
@@ -109,7 +109,7 @@ export const portfolios = [
     },
     {
         id: 3,
-        title: "Skill Bridge Website",
+        title: "Wine Route - Mendoza",
         link: "#",
         images: [
             "/portfolio-3.png",
@@ -305,28 +305,28 @@ export const reviews = [
 export const faqs = [
     {
         id: 1,
-        question: "Can you work with clients remotely?",
-        answer: "Absolutely! I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools, I ensure seamless collaboration regardless of geographical location."
+        question: "What sets me apart as a tour guide?",
+        answer: "As a tour guide, what sets me apart is my personalized approach and commitment to creating authentic and memorable experiences for each of my clients. Not only do I provide detailed information about the destinations we visit, but I also strive to connect with each individual, tailoring the tour based on their specific interests and needs."
     },
     {
         id: 2,
-        question: "Do you offer website maintenance services?",
-        answer: "Yes, I offer website maintenance services. I will ensure that your website is up-to-date and running smoothly."
+        question: "What type of tours or experiences do I offer?",
+        answer: "I offer a wide range of tours and experiences designed to meet the interests and preferences of diverse travelers. From cultural tours that explore the region's rich history and heritage to exciting outdoor excursions that allow visitors to enjoy nature at its best, I aim to provide options to suit all tastes. Additionally, I offer food tours that allow travelers to discover the authentic flavors of the region and themed tours that explore specific topics such as urban art, architecture or local folklore. Whether you prefer to explore on foot, by bicycle, by private vehicle or more adventurously, I have options to meet the needs of all travelers and make your experience unforgettable."
     },
     {
         id: 3,
-        question: "Do you offer website maintenance services?",
-        answer: "Yes, I offer website maintenance services. I will ensure that your website is up-to-date and running smoothly."
+        question: "How do I prepare for each tour?",
+        answer: "For each tour, I immerse myself in extensive research to ensure that I am fully prepared and can deliver an exceptional experience to my clients. This involves studying the history, culture and points of interest of the destination, as well as staying up to date with the latest news and relevant local events. I carefully plan the tour route, selecting the most notable locations and designing an itinerary that maximizes my clients' time and gives them a complete view of the destination. Additionally, I coordinate any necessary logistics, such as transportation and entry reservations, to ensure a smooth and seamless experience."
     },
     {
         id: 4,
-        question: "Do you offer website maintenance services?",
-        answer: "Yes, I offer website maintenance services. I will ensure that your website is up-to-date and running smoothly."
+        question: "What expectation do I have for my clients at the end of each tour?",
+        answer: "At the end of each tour, my main expectation is that my clients leave with deep satisfaction and enrichment. I wish that you not only enjoyed a memorable experience, but also gained a deeper and more meaningful understanding of the destination you have explored. I aspire for my clients to feel inspired, excited and connected to the culture, history and beauty of the place they have visited."
     },
     {
         id: 5,
-        question: "Do you offer website maintenance services?",
-        answer: "Yes, I offer website maintenance services. I will ensure that your website is up-to-date and running smoothly."
+        question: "How do I stay up to date with trends and news in the tourism industry?",
+        answer: " To stay up to date with trends and developments in the tourism industry, I regularly dedicate time to research, study and participation in relevant events such as participation in tourism conferences and seminars to stay abreast of the latest trends, best practices and developments. in the industry, reading books, magazines and specialized publications on tourism to obtain information about new destinations, popular tourist activities and changes in traveler preferences added to the monitoring digital media such as blogs, websites and social networks related to tourism to be aware of news, events and opinions of experts in the industry."
     }
 ];
 
