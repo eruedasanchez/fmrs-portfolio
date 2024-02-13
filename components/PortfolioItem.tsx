@@ -11,8 +11,9 @@ const PortfolioItem = ({key, portfolio} : PortfolioProps) => {
     return (
         <div key={key} className="box">
             <PortfolioCenter
-                currentImg={currentImg}
                 portfolio={portfolio}
+                currentImg={currentImg}
+                setCurrentImg={setCurrentImg}
             />
             <PortfolioThumbnails
                 portfolio={portfolio}

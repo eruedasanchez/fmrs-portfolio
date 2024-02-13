@@ -51,6 +51,15 @@ export interface PortfolioThumbnailsProps extends PortfolioCenterProps{
     setCurrentImg: React.Dispatch<React.SetStateAction<string>>
 }
 
+export interface LightboxProps{
+    portfolio: Portfolio,
+    currentImg: string,
+    setCurrentImg: React.Dispatch<React.SetStateAction<string>>, 
+    setIsOpen: React.Dispatch<React.SetStateAction<boolean>>, 
+    handlePrevImage: (portfolio: Portfolio, currentImg: string, setCurrentImg: React.Dispatch<React.SetStateAction<string>>) => void, 
+    handleNextImage: (portfolio: Portfolio, currentImg: string, setCurrentImg: React.Dispatch<React.SetStateAction<string>>) => void
+}
+
 export interface SocialLink{
     id: number,
     icon: LucideIcon,
