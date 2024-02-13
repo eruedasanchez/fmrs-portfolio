@@ -9,7 +9,6 @@ const lora = Lora({ subsets: ["latin"] });
 const Milestone = () => {
     const milestoneRefs = useRef<(HTMLDivElement | null)[]>([]);
     
-
     useEffect(() => {
         const currentRefs = milestoneRefs.current;
         let index = 0;
@@ -69,7 +68,7 @@ const Milestone = () => {
                         </div>
                         <div
                             ref={element => milestoneRefs.current[index] = element}
-                            className={`${lora.className} delay-${250 * milestone.id}ms
+                            className={`${lora.className} delay-${200 * milestone.id}ms
                             w-[calc(100%-4rem)] tablet:w-[calc(50%-2.5rem)] box !p-5 tablet:!p-8`}
                         >
                             <div className="flex justify-between items-center space-x-2 mb-1">

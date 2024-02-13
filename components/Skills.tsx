@@ -1,18 +1,59 @@
-import { skills } from "@/constants/constants";
+'use client';
+
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Lora } from "next/font/google";
+import { skills } from "@/constants/constants";
 
 const lora = Lora({ subsets: ["latin"] });
 
 const Skills = () => {
+    const skillsRefs = useRef<(HTMLDivElement | null)[]>([]);
+    
+    useEffect(() => {
+        const currentRefs = skillsRefs.current;
+        let index = 0;
+        
+        const options = {
+            root: null, 
+            rootMargin: '0px', 
+            threshold: 0.001
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slider-reveal'); 
+                    observer.unobserve(entry.target); 
+                    index++;
+                }
+            });
+        }, options);
+
+        skillsRefs.current.forEach(skillRef => {
+            if (skillRef) observer.observe(skillRef);
+        });
+
+        // Limpiar el observador cuando el componente se desmonte
+        return () => {
+            currentRefs.forEach(skillRef => {
+                if (skillRef) observer.unobserve(skillRef);
+            });
+        };
+    }, []);
+    
     return (
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))]
         tablet:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-3 tablet:gap-6">
             {
                 skills.map((skill, index) => (
-                    <div key={index} className="box flex flex-col items-center gap-5 hover:scale-95">
+                    <div 
+                        key={index} 
+                        ref={element => skillsRefs.current[index] = element}
+                        className="box flex flex-col items-center gap-5"
+                    >
                         <div className="w-16 h-16 rounded bg-brown 
-                        flex items-center justify-center flex-shrink-0 mb-2 hover:scale-105">
+                        flex items-center justify-center flex-shrink-0 mb-2">
                             <Image
                                 src={skill.icon}
                                 alt={skill.name}

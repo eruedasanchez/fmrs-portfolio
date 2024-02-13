@@ -3,7 +3,7 @@ import MilestoneHero from "@/components/MilestoneHero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'About - Flor RS'
+    title: 'About | Florencia Rueda Sanchez'
 };
 
 const AboutPage = () => {

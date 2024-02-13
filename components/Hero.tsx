@@ -44,16 +44,13 @@ const Hero = ({header, title, description} : HeroProps) => {
                     statsDetailStyles="py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2"
                 />
             </div>
-            <div 
-                className="relative w-full my-2 tablet:w-1/3 h-[400px] tablet:h-[700px] rounded-b-2xl overflow-hidden"
-                data-aos="fade-left"
-                data-aos-delay="300"
-            >
+            <div className="relative w-full my-2 tablet:w-1/2 h-[400px] tablet:h-[700px] rounded-2xl overflow-hidden">
                 <Image
-                    src={"/hero.png"}
+                    src={"/hero-1.jpg"}
                     alt="hero"
-                    fill
-                    className="object-cover"
+                    layout="fill"
+                    objectPosition="center"
+                    className="rounded-2xl"
                 />
             </div>
         </section>
