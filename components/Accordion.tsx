@@ -1,8 +1,8 @@
 'use client';
 
+import { useState } from "react";
 import { AccordionProps } from "@/types/types";
 import { Plus } from "lucide-react";
-import { useState } from "react";
 
 const Accordion = ({ data } : AccordionProps) => {
     const [currentActive, setCurrentActive] = useState<number | null>(0);
@@ -28,13 +28,13 @@ const Accordion = ({ data } : AccordionProps) => {
                     >
                         <div className="flex justify-between items-center py-5">
                             <h6 className="text-grey-700">{item.question}</h6>
-                            <div className={` transition-transform duration-300
+                            <div className={`transition-all duration-400
                             ${isOpen && currentActive === item.id && 'rotate-45'}
                             `}>
                                 <Plus size={16}></Plus>
                             </div>
                         </div>
-                        <div className={`text-grey-600 transition-all duration-300
+                        <div className={`text-grey-600 transition-all duration-500 
                         ${isOpen && currentActive === item.id ? 'max-h-[1000px] opacity-100 pb-5' : 'max-h-0 opacity-0'}
                         `}
                         >

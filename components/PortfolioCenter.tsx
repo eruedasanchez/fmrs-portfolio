@@ -44,8 +44,8 @@ const PortfolioCenter = ({portfolio, currentImg, setCurrentImg} : PortfolioThumb
                     flex items-center justify-center">
                         <div 
                             className="w-16 h-16 text-brown-700 rounded-lg
-                            flex items-center justify-center
-                            bg-peach border border-brown-700 p-3
+                            flex items-center justify-center 
+                            bg-peach border border-brown-700 p-3 
                             hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                             onClick={() => setIsOpen(true)}>
                             <ArrowUpRight/>
