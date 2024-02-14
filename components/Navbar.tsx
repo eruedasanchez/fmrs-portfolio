@@ -1,9 +1,12 @@
+'use client';
+
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { NavbarProps } from "@/types/types";
 import { navLinks } from "@/constants/constants";
 import { Phone } from "lucide-react";
 import { Lora } from "next/font/google";
+import Theme from "./Theme";
 
 const lora = Lora({ subsets: ["latin"] });
 
@@ -21,16 +24,24 @@ const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
                     ))
                 }
             </ul>
-            <Link 
-                href={"/contact"} 
-                className="btn btn-primary
-                hover:bg-peach-500 hover:text-brown-700 
-                hover:border hover:border-brown-700
-                hover:scale-105 transition-all duration-700"
-            >
-                <Phone size={24}/>
-                Contact me
-            </Link>
+            <div className="flex justify-center items-center gap-6">
+                <Link 
+                    href={"/contact"} 
+                    className="btn btn-primary
+                    hover:bg-peach-500 hover:text-brown-700 
+                    hover:border hover:border-brown-700
+                    hover:scale-105 transition-all duration-700"
+                >
+                    <Phone size={24}/>
+                    Contact me
+                </Link>
+                <Theme
+                    containerStyles="w-10 h-10 rounded-full flex justify-center items-center
+                    border-2 border-brown-700 
+                    hover:scale-105 transition-all duration-300 cursor-pointer"
+                    iconStyles="text-brown-700"
+                />
+            </div>
         </nav>
     )
 }

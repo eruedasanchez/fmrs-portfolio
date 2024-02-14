@@ -115,6 +115,11 @@ export interface ContactDetailProps{
     info: ContactData
 }
 
+export interface ThemeProps{
+    containerStyles: string, 
+    iconStyles: string
+}
+
 
 
 

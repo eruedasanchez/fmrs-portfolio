@@ -4,28 +4,35 @@ import { useState } from "react";
 import Link from "next/link";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
-import { Menu, X } from "lucide-react";
+import { Menu, MoonStar, Sun, X } from "lucide-react";
 import { socialLinks } from "@/constants/constants";
 import { Lora } from "next/font/google";
+import Theme from "./Theme";
 
 const lora = Lora({ subsets: ["latin"] });
 
 const MobileMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
-
-    const toogleMenu = () => {
-        setIsOpen(!isOpen);
-    }
+    
+    const toogleMenu = () => setIsOpen(!isOpen);
     
     return (
         <div className="tablet:hidden">
-            {/* toogle button */}
-            <button 
-                className="text-grey-700 hover:text-brown transition-colors"
-                onClick={toogleMenu}
-            >
-                <Menu/>
-            </button>
+            <div className="flex justify-center items-center gap-6">
+                {/* toogle button */}
+                <button 
+                    className="text-grey-700 hover:text-brown transition-colors"
+                    onClick={toogleMenu}
+                >
+                    <Menu/>
+                </button>
+                <Theme
+                    containerStyles="w-9 h-9 rounded-full flex justify-center items-center
+                    border-2 border-grey-700 
+                    hover:scale-105 hover:border-brown transition-all duration-300 cursor-pointer"
+                    iconStyles="w-6 h-6 text-grey-700 hover:text-brown"
+                />
+            </div>
             {/* sidebar */}
             <div className={`border-4 w-full h-full flex flex-col bg-peach-600 
             fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out transform
