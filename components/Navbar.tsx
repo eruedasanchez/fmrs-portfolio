@@ -25,7 +25,8 @@ const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
                 href={"/contact"} 
                 className="btn btn-primary
                 hover:bg-peach-500 hover:text-brown-700 
-                hover:border hover:border-brown-700"
+                hover:border hover:border-brown-700
+                hover:scale-105 transition-all duration-700"
             >
                 <Phone size={24}/>
                 Contact me

@@ -28,7 +28,9 @@ const ContactBody = () => {
                                 <Link
                                     href={link.url}
                                     key={index}
-                                    className="w-10 h-10 bg-peach border border-brown-700 rounded-full text-brown-700 flex justify-center items-center"
+                                    className="w-10 h-10 bg-peach border border-brown-700 rounded-full text-brown-700 flex justify-center items-center 
+                                    hover:bg-brown-700 hover:border hover:border-peach hover:text-peach
+                                    transition-all duration-300"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

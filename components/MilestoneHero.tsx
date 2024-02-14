@@ -9,13 +9,13 @@ const lora = Lora({ subsets: ["latin"] });
 const MilestoneHero = () => {
     return (
         <section className="max-width section-padding flex flex-col tablet:flex-row gap-20 items-center">
-            <div className="relative my-2 w-full mobile:w-11/12 tabletS:w-8/12 tabletM:w-7/12 tablet:w-8/12 desktopM:w-6/12 
-            h-[400px] mobile:h-[500px] tabletS:h-[400px] tabletM:h-[550px] tabletL:h-[600px] tablet:h-[700px] rounded-2xl overflow-hidden">
+            <div className="relative w-full max-w-[550px] aspect-[40/45] my-1 tablet:my-8 mx-auto">
                 <Image
                     src={"/hero-2.jpg"}
                     alt="about img"
-                    layout="fill"
-                    objectPosition="center"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 550px"
+                    priority
                     className="rounded-2xl"
                 />
             </div>

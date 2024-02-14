@@ -36,14 +36,16 @@ const Testimonials = () => {
                 <div className="flex gap-3">
                     <button 
                         className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
-                        hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
+                        hover:bg-brown-700 hover:text-peach hover:border hover:border-peach
+                        transition-all duration-300"
                         onClick={() => swiperRef.current?.slidePrev()}
                     >
                         <ChevronLeft/>
                     </button>
                     <button 
                         className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
-                        hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
+                        hover:bg-brown-700 hover:text-peach hover:border hover:border-peach
+                        transition-all duration-300"
                         onClick={() => swiperRef.current?.slideNext()}
                     >
                         <ChevronRight/>

@@ -86,7 +86,10 @@ const ContactForm = () => {
                 {
                         errors.message?.message && <p className="text-sm text-red-600 px-1 mt-1">{errors.message?.message}</p>
                     }
-                <button type="submit" className="btn btn-primary">Send</button>
+                <button 
+                    type="submit" 
+                    className="btn bg-peach border border-brown-700 text-brown-700  
+                    hover:text-peach-100 hover:bg-brown-700 hover:scale-110 transition-all duration-300">Send</button>
             </form>
         </div>
     );

@@ -34,6 +34,7 @@ const PortfolioSection = ({ data, title } : PortfolioSectionProps) => {
                 <div className="flex gap-2">
                     <button 
                         className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
+                        transition-all duration-300
                         hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                         onClick={() => swiperRef.current?.slidePrev()}
                     >
@@ -41,6 +42,7 @@ const PortfolioSection = ({ data, title } : PortfolioSectionProps) => {
                     </button>
                     <button 
                         className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
+                        transition-all duration-300
                         hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                         onClick={() => swiperRef.current?.slideNext()}
                     >
@@ -48,7 +50,7 @@ const PortfolioSection = ({ data, title } : PortfolioSectionProps) => {
                     </button>
                 </div>
             </div>
-            <div className="pt-8">
+            <div className="max-width section-padding pt-6">
                 <Swiper
                     spaceBetween={20}
                     slidesPerView={sliderPerView}

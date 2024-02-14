@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Lora } from "next/font/google";
 import '../app/styles/dream-avenue.css';
+import { Lora } from "next/font/google";
 
 const lora = Lora({ subsets: ["latin"] });
 

@@ -12,7 +12,7 @@ const lora = Lora({ subsets: ["latin"] });
 const Hero = ({header, title, description} : HeroProps) => {
     return (
         <section className="flex items-center max-width flex-col-reverse tablet:flex-row mb-10">
-            <div className="tablet:w-2/3 mt-10 tablet:mt-0">
+            <div className="tablet:w-2/3 mt-10 tablet:mt-5">
                 <div className="flex flex-col gap-3 items-center tablet:items-start 
                 max-w-2xl text-center tablet:text-left">
                     <p className="font-lora font-light px-4 py-2 bg-peach-500 
@@ -28,10 +28,10 @@ const Hero = ({header, title, description} : HeroProps) => {
                         href={"/contact"} 
                         className="btn btn-primary 
                         hover:bg-peach-500 hover:text-brown-700 hover:border hover:border-brown-700 
-                        hover:scale-100 transition-all duration-600">
+                        hover:scale-105 transition-all duration-700">
                         <Phone size={18}/>Contact Now
                     </Link>
-                    <Link href={"/portfolio"} className="btn hover:scale-110 transition-all duration-400">
+                    <Link href={"/portfolio"} className="btn hover:scale-110 transition-all duration-600">
                         View Portfolio
                         <ArrowRight size={16}/>
                     </Link>
@@ -45,13 +45,13 @@ const Hero = ({header, title, description} : HeroProps) => {
                     statsDetailStyles="py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2"
                 />
             </div>
-            <div className="relative my-2 w-full mobile:w-11/12 tabletS:w-8/12 tabletM:w-7/12 tablet:w-8/12 desktopM:w-6/12 
-            h-[400px] mobile:h-[500px] tabletS:h-[400px] tabletM:h-[550px] tabletL:h-[600px] tablet:h-[700px] rounded-2xl overflow-hidden">
+            <div className="relative w-full max-w-[550px] aspect-[40/45] my-4 tablet:my-8 mx-auto">
                 <Image
                     src={"/hero-1.jpg"}
                     alt="hero"
-                    layout="fill"
-                    objectPosition="center"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 550px"
+                    priority
                     className="rounded-2xl"
                 />
             </div>
@@ -60,3 +60,5 @@ const Hero = ({header, title, description} : HeroProps) => {
 }
 
 export default Hero;
+
+

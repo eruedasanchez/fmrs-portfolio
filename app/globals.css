@@ -40,7 +40,7 @@
   }
   
   .btn {
-    @apply flex items-center justify-center gap-2 rounded px-5 py-3.5 capitalize text-grey-700;
+    @apply flex items-center justify-center gap-2 rounded px-5 py-3.5 capitalize;
   }
 
   .btn-primary {

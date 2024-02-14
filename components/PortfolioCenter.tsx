@@ -31,7 +31,7 @@ const PortfolioCenter = ({portfolio, currentImg, setCurrentImg} : PortfolioThumb
             <>
                 <h4 className={`${lora.className} text-2xl mb-5`}>{portfolio.title}</h4>
                 <div className="relative w-full h-80 rounded-lg overflow-hidden 
-                group cursor-pointer mb-5 ">
+                group cursor-pointer mb-5 hover:scale-105 transition-all duration-450">
                     <Image
                         src={currentImg}
                         alt={portfolio.title}
@@ -45,7 +45,7 @@ const PortfolioCenter = ({portfolio, currentImg, setCurrentImg} : PortfolioThumb
                         <div 
                             className="w-16 h-16 text-brown-700 rounded-lg
                             flex items-center justify-center 
-                            bg-peach border border-brown-700 p-3 
+                            bg-peach border border-brown-700 p-3 transition-all duration-300 
                             hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                             onClick={() => setIsOpen(true)}>
                             <ArrowUpRight/>

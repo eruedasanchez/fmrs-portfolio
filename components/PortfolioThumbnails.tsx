@@ -8,7 +8,8 @@ const PortfolioThumbnails = ({currentImg, portfolio, setCurrentImg} : PortfolioT
                 portfolio.images.map((image, index) => (
                     <div 
                         key={index} 
-                        className="relative h-20 w-full rounded-lg overflow-hidden group cursor-pointer"
+                        className="relative h-20 w-full rounded-lg overflow-hidden group cursor-pointer 
+                        hover:scale-105 transition-all duration-200"
                         onClick={() => setCurrentImg(image)}>
                         <Image
                             src={image}

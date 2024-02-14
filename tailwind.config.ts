@@ -17,6 +17,9 @@ const config: Config = {
         desktopM:"1300px",
         desktop: "1620px"
       },
+      aspectRatio: {
+        '40/45': '40 / 45'
+      },
       fontFamily: {
         'dream-avenue': ['dream_avenueregular', 'sans-serif'],
         'lora': ['lorabold_italic', 'sans-serif']

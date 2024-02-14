@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-// import { Manrope } from "next/font/google";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
-
-// const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My portfolio | Index",
@@ -14,7 +11,7 @@ export default function RootLayout({ children } : Readonly<{children: React.Reac
   return (
     <html lang="en">
       <body className='bg-peach-600'>
-        <NextTopLoader color="#5700FF" showSpinner={false}/>
+        <NextTopLoader color="#B27947" showSpinner={false}/>
         {children}
         {/* Init AOS */}
       </body>

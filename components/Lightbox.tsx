@@ -25,14 +25,14 @@ const Lightbox = ({portfolio, currentImg, setCurrentImg, setIsOpen, handlePrevIm
         bg-black bg-opacity-70 gap-5">
             <button 
                 className="w-10 h-10 flex justify-center items-center absolute top-5 right-5  
-                bg-peach border border-brown-700 p-1 rounded-full text-brown-700 transition-colors
+                bg-peach border border-brown-700 p-1 rounded-full text-brown-700 transition-colors duration-300
                 hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                 onClick={() => setIsOpen(false)}
             >
                 <X/>
             </button>
             <button 
-                className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
+                className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700 transition-colors duration-300
                 hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                 onClick={() => handlePrevImage(portfolio, currentImg, setCurrentImg)}
             >
@@ -50,7 +50,7 @@ const Lightbox = ({portfolio, currentImg, setCurrentImg, setIsOpen, handlePrevIm
                 }
             </div>
             <button 
-                className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700
+                className="bg-peach border border-brown-700 p-1 rounded-full text-brown-700 transition-colors duration-300
                 hover:bg-brown-700 hover:text-peach hover:border hover:border-peach"
                 onClick={() => handleNextImage(portfolio, currentImg, setCurrentImg)}
             >
