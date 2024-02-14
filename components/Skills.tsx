@@ -61,7 +61,7 @@ const Skills = () => {
                                 height={35}
                             />
                         </div>
-                        <div className="text-center hover:scale-105">
+                        <div className="text-center hover:scale-105 transition-all duration-600">
                             <h4 className={`${lora.className} text-2xl text-grey-700 mb-2`}>{skill.name}</h4>
                             <p className={`${lora.className} text-base text-grey-600`}>{skill.description}</p>
                         </div>

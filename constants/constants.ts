@@ -415,3 +415,9 @@ export const contactData = [
     
 ];
 
+export const keys = {
+    LEFT: 'ArrowLeft',
+    RIGHT: 'ArrowRight',
+    ESC: 'Escape'
+}
+

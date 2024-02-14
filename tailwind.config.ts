@@ -10,7 +10,11 @@ const config: Config = {
     extend: {
       screens: {
         mobile: "490px",
+        tabletS: "600px",
+        tabletM: "768px",
+        tabletL: "900px",
         tablet: "1040px",
+        desktopM:"1300px",
         desktop: "1620px"
       },
       fontFamily: {

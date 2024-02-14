@@ -21,16 +21,17 @@ const Hero = ({header, title, description} : HeroProps) => {
                     </p>
                     <h1 className="text-grey font-dream-avenue text-5xl font-light 
                     tracking-wide slider-reveal hero-title slider-reveal delay-500ms">{title}</h1>
-                    <p className={`${lora.className} text-grey-600 slider-reveal hero-text slider-reveal delay-750ms`}>{description}</p>
+                    <p className={`${lora.className} pr-2 text-grey-600 slider-reveal hero-text slider-reveal delay-750ms`}>{description}</p>
                 </div>
                 <div className={`${lora.className} flex gap-5 mt-10 justify-center tablet:justify-start slider-reveal delay-1000ms`}>
                     <Link 
                         href={"/contact"} 
                         className="btn btn-primary 
-                        hover:bg-peach-500 hover:text-brown-700 hover:border hover:border-brown-700">
+                        hover:bg-peach-500 hover:text-brown-700 hover:border hover:border-brown-700 
+                        hover:scale-100 transition-all duration-600">
                         <Phone size={18}/>Contact Now
                     </Link>
-                    <Link href={"/portfolio"} className="btn hover:scale-110">
+                    <Link href={"/portfolio"} className="btn hover:scale-110 transition-all duration-400">
                         View Portfolio
                         <ArrowRight size={16}/>
                     </Link>
@@ -44,7 +45,8 @@ const Hero = ({header, title, description} : HeroProps) => {
                     statsDetailStyles="py-8 px-10 rounded-lg bg-peach-400 text-center col-span-2"
                 />
             </div>
-            <div className="relative w-full my-2 tablet:w-1/2 h-[400px] tablet:h-[700px] rounded-2xl overflow-hidden">
+            <div className="relative my-2 w-full mobile:w-11/12 tabletS:w-8/12 tabletM:w-7/12 tablet:w-8/12 desktopM:w-6/12 
+            h-[400px] mobile:h-[500px] tabletS:h-[400px] tabletM:h-[550px] tabletL:h-[600px] tablet:h-[700px] rounded-2xl overflow-hidden">
                 <Image
                     src={"/hero-1.jpg"}
                     alt="hero"

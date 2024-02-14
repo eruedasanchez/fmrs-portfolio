@@ -1,9 +1,25 @@
-import { LightboxProps } from '@/types/types'
-import { ChevronLeft, ChevronRight, X } from 'lucide-react'
-import Image from 'next/image'
-import React from 'react'
+'use client';
+
+import React, { useCallback, useEffect } from 'react';
+import Image from 'next/image';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { LightboxProps } from '@/types/types';
+import { keys } from '@/constants/constants';
 
 const Lightbox = ({portfolio, currentImg, setCurrentImg, setIsOpen, handlePrevImage, handleNextImage} : LightboxProps) => {
+    const handleKeyDown = useCallback((event: KeyboardEvent) => {
+        if (event.key === keys.LEFT) handlePrevImage(portfolio, currentImg, setCurrentImg);
+        if (event.key === keys.RIGHT) handleNextImage(portfolio, currentImg, setCurrentImg);
+        if (event.key === keys.ESC) setIsOpen(false); 
+    }, [currentImg, handleNextImage, handlePrevImage, portfolio, setCurrentImg, setIsOpen]);
+    
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [handleKeyDown]); 
+    
     return (
         <div className="fixed inset-0 w-full h-full z-30 flex justify-center items-center
         bg-black bg-opacity-70 gap-5">
