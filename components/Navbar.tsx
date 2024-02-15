@@ -10,7 +10,7 @@ import Theme from "./Theme";
 
 const lora = Lora({ subsets: ["latin"] });
 
-const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
+const Navbar = ({navStyles, ulStyles, showTheme, toogleMenu} : NavbarProps) => {
     return (
         <nav className={`${lora.className} flex items-center ${navStyles}`}>
             <ul className={`flex items-center ${ulStyles}`}>
@@ -19,7 +19,8 @@ const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
                         <NavLink 
                             key={index}
                             href={link.url}
-                            label={link.label} 
+                            label={link.label}
+                            toogleMenu={toogleMenu} 
                         />
                     ))
                 }
@@ -32,18 +33,22 @@ const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
                     hover:border hover:border-brown-700
                     hover:scale-105 transition-all duration-700
                     dark:bg-brown dark:hover:text-brown dark:hover:bg-peach-500"
+                    onClick={toogleMenu}
                 >
                     <Phone size={24}/>
                     Contact me
                 </Link>
-                <Theme
-                    containerStyles="w-10 h-10 rounded-full flex justify-center items-center
-                    border-2 border-brown-700 
-                    hover:scale-105 transition-all duration-300 cursor-pointer
-                    display-
-                    dark:border-brown"
-                    iconStyles="text-brown-700 dark:text-brown"
-                />
+                {
+                    showTheme && 
+                        <Theme
+                            containerStyles="w-10 h-10 rounded-full flex justify-center items-center
+                            border-2 border-brown-700 
+                            hover:scale-105 transition-all duration-300 cursor-pointer
+                            display-
+                            dark:border-brown"
+                            iconStyles="text-brown-700 dark:text-brown"
+                        />
+                }
             </div>
         </nav>
     )

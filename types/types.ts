@@ -5,12 +5,16 @@ export interface NavLinksProps{
     index?: number,
     href: string,
     label: string,
-    containedStyles?: string
+    containedStyles?: string,
+    toogleMenu?: () => void 
 }
 
 export interface NavbarProps{
     navStyles: string, 
-    ulStyles: string
+    ulStyles: string,
+    showTheme: boolean,
+    toogleMenu?: () => void
+
 }  
 
 export interface HeroProps{

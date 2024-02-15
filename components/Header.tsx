@@ -9,6 +9,7 @@ const Header = () => {
             <Navbar
                 navStyles="gap-12 max-tablet:hidden"
                 ulStyles="gap-8"
+                showTheme
             />
             <MobileMenu/>
         </header>
