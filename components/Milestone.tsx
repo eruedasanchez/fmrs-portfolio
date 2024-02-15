@@ -58,10 +58,10 @@ const Milestone = () => {
                         <div className={`flex justify-center items-center
                             w-10 h-10 rounded-full bg-peach border border-brown-700 shrink-0
                             tablet:order-1 tablet:group-odd:-translate-x-1/2 tablet:group-even:translate-x-1/2
-                            group-first:before:absolute group-first:before:w-1 group-first:before:h-20
-                            group-first:before:bottom-full group-first:before:bg-peach-600
+                            group-first:before:absolute group-first:before:w-1 group-first:before:h-20 
+                            group-first:before:-top-[81px] group-first:before:bg-peach-600 dark:group-first:before:bg-slate-800
                             group-last:before:absolute group-last:before:w-1 group-last:before:h-20
-                            group-last:before:bottom-full group-last:before:top-full group-last:before:bg-peach-600
+                            group-last:before:bottom-full tablet:group-last:before:top-[39px] group-last:before:bg-peach-600 dark:group-last:before:bg-slate-800
                             `}
                         >
                             <span className="w-3 h-3 bg-brown-700 border-brown-700 rounded-full"></span>

@@ -28,7 +28,7 @@ const Accordion = ({ data } : AccordionProps) => {
                     >
                         <div className="flex justify-between items-center py-5">
                             <h6 className="text-grey-700">{item.question}</h6>
-                            <div className={`transition-all duration-400
+                            <div className={`transition-all duration-400 dark:text-brown-700
                             ${isOpen && currentActive === item.id && 'rotate-45'}
                             `}>
                                 <Plus size={16}></Plus>

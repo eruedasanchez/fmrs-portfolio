@@ -9,7 +9,7 @@ const PortfolioItem = ({key, portfolio} : PortfolioProps) => {
     const [currentImg, setCurrentImg] = useState(portfolio.images[0]);
 
     return (
-        <div key={key} className="box">
+        <div key={key} className="box dark:bg-brown">
             <PortfolioCenter
                 portfolio={portfolio}
                 currentImg={currentImg}

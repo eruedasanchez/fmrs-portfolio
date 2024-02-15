@@ -19,7 +19,7 @@ const ContactBody = () => {
                             ))
                         }
                     </div>
-                    <h6 className="mt-10 mb-3 text-gray-700 max-tablet:text-center">
+                    <h6 className="mt-10 mb-3 text-gray-700 dark:text-peach-500 max-tablet:text-center">
                         My Social Profiles
                     </h6>
                     <div className="flex gap-3 box !p-6 w-max max-tablet:mx-auto">

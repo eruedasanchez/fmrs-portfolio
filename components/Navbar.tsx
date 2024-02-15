@@ -30,7 +30,8 @@ const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
                     className="btn btn-primary
                     hover:bg-peach-500 hover:text-brown-700 
                     hover:border hover:border-brown-700
-                    hover:scale-105 transition-all duration-700"
+                    hover:scale-105 transition-all duration-700
+                    dark:bg-brown dark:hover:text-brown dark:hover:bg-peach-500"
                 >
                     <Phone size={24}/>
                     Contact me
@@ -38,8 +39,10 @@ const Navbar = ({navStyles, ulStyles} : NavbarProps) => {
                 <Theme
                     containerStyles="w-10 h-10 rounded-full flex justify-center items-center
                     border-2 border-brown-700 
-                    hover:scale-105 transition-all duration-300 cursor-pointer"
-                    iconStyles="text-brown-700"
+                    hover:scale-105 transition-all duration-300 cursor-pointer
+                    display-
+                    dark:border-brown"
+                    iconStyles="text-brown-700 dark:text-brown"
                 />
             </div>
         </nav>

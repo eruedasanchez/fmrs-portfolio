@@ -25,8 +25,8 @@ const MilestoneHero = () => {
                         tablet:w-max max-tablet:mx-auto slider-reveal delay-250ms">
                             Welcome to the world of captivating Tourist Guide!
                         </p>
-                        <h1 className="font-dream-avenue text-4xl tracking-wide font-light text-grey-700 slider-reveal delay-500ms">I&apos;m Florencia Rueda Sanchez</h1>
-                        <p className={`${lora.className} text-grey-600 slider-reveal delay-750ms`}>
+                        <h1 className="font-dream-avenue text-4xl tracking-wide font-light text-grey-700 dark:text-brown-700 slider-reveal delay-500ms">I&apos;m Florencia Rueda Sanchez</h1>
+                        <p className={`${lora.className} text-grey-600 slider-reveal delay-750ms dark:text-peach-500`}>
                             Passionate about exploring and sharing unique experiences in every corner of the world. 
                             With a personalized approach and deep local knowledge, I invite you to immerse yourself 
                             in authentic adventures and uncover the hidden treasures of each destination through my 
@@ -42,6 +42,7 @@ const MilestoneHero = () => {
                             w-full py-8 px-10 mt-14 tablet:mt-24 gap-12 flex flex-col
                             tablet:flex-row"
                             statsDetailStyles="flex justify-center items-center gap-10 tablet:block"
+                            isPortfolio
                         />
                     </div>
                 </div>

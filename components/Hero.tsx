@@ -20,18 +20,20 @@ const Hero = ({header, title, description} : HeroProps) => {
                         {header}
                     </p>
                     <h1 className="text-grey font-dream-avenue text-5xl font-light 
-                    tracking-wide slider-reveal hero-title slider-reveal delay-500ms">{title}</h1>
-                    <p className={`${lora.className} pr-2 text-grey-600 slider-reveal hero-text slider-reveal delay-750ms`}>{description}</p>
+                    tracking-wide slider-reveal hero-title slider-reveal delay-500ms
+                    dark:text-brown-700">{title}</h1>
+                    <p className={`${lora.className} pr-2 text-grey-600 slider-reveal hero-text slider-reveal delay-750ms dark:text-peach-500`}>{description}</p>
                 </div>
                 <div className={`${lora.className} flex gap-5 mt-10 justify-center tablet:justify-start slider-reveal delay-1000ms`}>
                     <Link 
                         href={"/contact"} 
                         className="btn btn-primary 
                         hover:bg-peach-500 hover:text-brown-700 hover:border hover:border-brown-700 
-                        hover:scale-105 transition-all duration-700">
+                        hover:scale-105 transition-all duration-700
+                        dark:bg-brown-700 dark:hover:text-brown-700 dark:hover:bg-peach-500">
                         <Phone size={18}/>Contact Now
                     </Link>
-                    <Link href={"/portfolio"} className="btn hover:scale-110 transition-all duration-600">
+                    <Link href={"/portfolio"} className="btn hover:scale-110 transition-all duration-600 dark:text-brown-700">
                         View Portfolio
                         <ArrowRight size={16}/>
                     </Link>

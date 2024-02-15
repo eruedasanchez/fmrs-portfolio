@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
-import { Menu, MoonStar, Sun, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { socialLinks } from "@/constants/constants";
 import { Lora } from "next/font/google";
 import Theme from "./Theme";
@@ -21,7 +21,8 @@ const MobileMenu = () => {
             <div className="flex justify-center items-center gap-6">
                 {/* toogle button */}
                 <button 
-                    className="text-grey-700 hover:text-brown transition-colors"
+                    className="text-grey-700 hover:text-brown transition-colors duration-300
+                    dark:text-brown-700 dark:hover:text-brown"
                     onClick={toogleMenu}
                 >
                     <Menu/>
@@ -29,18 +30,21 @@ const MobileMenu = () => {
                 <Theme
                     containerStyles="w-9 h-9 rounded-full flex justify-center items-center
                     border-2 border-grey-700 
-                    hover:scale-105 hover:border-brown transition-all duration-300 cursor-pointer"
-                    iconStyles="w-6 h-6 text-grey-700 hover:text-brown"
+                    hover:scale-105 hover:border-brown transition-all duration-300 cursor-pointer
+                    dark:border-brown-700 dark:hover:border-brown"
+                    iconStyles="w-6 h-6 text-grey-700 hover:text-brown
+                    dark:text-brown-700 dark:hover:text-brown"
                 />
             </div>
             {/* sidebar */}
-            <div className={`border-4 w-full h-full flex flex-col bg-peach-600 
+            <div className={`border-4 w-full h-full flex flex-col bg-peach-600 dark:bg-slate-800 
             fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out transform
             ${isOpen ? 'trasnlate-x-0' : 'translate-x-full'}`}>
                 <div className="flex w-full items-center justify-between h-21 max-width border-b border-brown">
                     <Logo/>
                     <button 
-                        className="text-grey-700 hover:text-brown-700 transition-colors"
+                        className="text-grey-700 hover:text-brown-700 transition-colors duration-300
+                        dark:text-brown dark:hover:text-brown-700"
                         onClick={toogleMenu}
                     >
                         <X/>
@@ -56,7 +60,8 @@ const MobileMenu = () => {
                             <Link 
                                 key={link.id} 
                                 href={link.url}
-                                className='text-grey-700 hover:text-brown transition-colors'
+                                className='text-grey-700 hover:text-brown transition-colors duration-300
+                                dark:text-peach-500 dark:hover:text-brown'
                             >
                                 {link.label}
                             </Link>

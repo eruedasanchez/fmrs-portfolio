@@ -50,13 +50,13 @@ const Footer = () => {
                     contactDetails.map((detail, index) => (
                         <div key={index} className="flex gap-3 items-center text-brown-700">
                             <detail.icon size={20}/>
-                            <p className="text-grey-600 text-base">{detail.text}</p>
+                            <p className="text-grey-600 dark:text-peach-500 text-base">{detail.text}</p>
                         </div>
                     ))
                 }
             </div>
             {/* copyright text */}
-            <p className="mt-8 text-gray-600 text-center text-sm">
+            <p className="mt-8 text-gray-600 dark:text-peach-500 text-center text-sm">
                 Copyright © {new Date().getFullYear()} Florencia Rueda Sanchez. All rights reseved
             </p>
         </footer>

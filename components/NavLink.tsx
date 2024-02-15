@@ -13,7 +13,7 @@ const NavLink = ({index, href, label, containedStyles} : NavLinksProps) => {
             <Link 
                 href={href} 
                 className={
-                    `py-3 text-gray-700 
+                    `py-3 text-gray-700 dark:text-peach-500
                     hover:transition-colors relative block
                     after:block after:absolute after:left-0 after:h-0.5
                     after:bg-brown after:w-full after:scale-x-0

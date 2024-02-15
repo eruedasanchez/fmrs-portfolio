@@ -52,7 +52,7 @@ const Skills = () => {
                         ref={element => skillsRefs.current[index] = element}
                         className="box flex flex-col items-center gap-5"
                     >
-                        <div className="w-16 h-16 rounded bg-brown 
+                        <div className="w-16 h-16 rounded bg-brown dark:bg-brown-700  
                         flex items-center justify-center flex-shrink-0 mb-2">
                             <Image
                                 src={skill.icon}

@@ -92,12 +92,14 @@ export interface AccordionProps{
 export interface StatsProps{
     containedStyles: string, 
     statsDetailStyles?: string, 
+    isPortfolio?: boolean
 }
 
 export interface StatsDetailProps{
     quantity: number,
     title: string,
     statsDetailStyles?: string 
+    isPortfolio?: boolean
 }
 
 export interface PortfolioSectionProps{
