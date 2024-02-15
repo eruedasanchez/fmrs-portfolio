@@ -120,6 +120,10 @@
 
   .delay-1000ms { animation-delay: 1000ms; }
 
+  .my-toast{
+    @apply bg-slate-800
+  }
+
   
   
   /* .btn-transition{ */
