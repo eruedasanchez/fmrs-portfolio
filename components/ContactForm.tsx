@@ -28,8 +28,6 @@ const ContactForm = () => {
                 });
                 
                 await sendEmail(formDataToSend);
-                // Mensaje de éxito o redirigir a otra página
-                console.log("Email enviado con éxito!");
             } catch (error) {
                 console.error("Error al enviar el email:", error);
             }
