@@ -16,7 +16,7 @@ export const ContactFormEmail = ({ firstName, lastName, senderEmail, phone, mess
         <Body style={main}>
             <Container style={container}>
                 <Img
-                    src={"/amstherdam-1.jpg"}
+                    src={"/dachshund.png"}
                     width="170"
                     height="50"
                     alt="dachshund"
