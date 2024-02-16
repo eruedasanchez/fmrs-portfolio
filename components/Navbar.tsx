@@ -7,10 +7,11 @@ import { navLinks } from "@/constants/constants";
 import { Phone } from "lucide-react";
 import { Lora } from "next/font/google";
 import Theme from "./Theme";
+import LanguageDropdownMenu from "./LanguageDropdownMenu";
 
 const lora = Lora({ subsets: ["latin"] });
 
-const Navbar = ({navStyles, ulStyles, showTheme, toogleMenu} : NavbarProps) => {
+const Navbar = ({navStyles, ulStyles, showTheme, toogleMenu, showLanguageMenu} : NavbarProps) => {
     return (
         <nav className={`${lora.className} flex items-center ${navStyles}`}>
             <ul className={`flex items-center ${ulStyles}`}>
@@ -39,12 +40,19 @@ const Navbar = ({navStyles, ulStyles, showTheme, toogleMenu} : NavbarProps) => {
                     Contact me
                 </Link>
                 {
+                    showLanguageMenu &&
+                    <LanguageDropdownMenu
+                        containerStyles="border-brown-700 dark:border-brown"
+                        iconStyles="text-brown-700 dark:text-brown
+                        text-brown-700 dark:text-brown"
+                    />
+                }
+                {
                     showTheme && 
                         <Theme
                             containerStyles="w-10 h-10 rounded-full flex justify-center items-center
                             border-2 border-brown-700 
                             hover:scale-105 transition-all duration-300 cursor-pointer
-                            display-
                             dark:border-brown"
                             iconStyles="text-brown-700 dark:text-brown"
                         />

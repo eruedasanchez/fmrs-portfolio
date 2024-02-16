@@ -13,7 +13,8 @@ export interface NavbarProps{
     navStyles: string, 
     ulStyles: string,
     showTheme: boolean,
-    toogleMenu?: () => void
+    toogleMenu?: () => void,
+    showLanguageMenu: boolean
 
 }  
 
@@ -122,6 +123,11 @@ export interface ContactDetailProps{
 }
 
 export interface ThemeProps{
+    containerStyles: string, 
+    iconStyles: string
+}
+
+export interface LanguageDropdownMenuProps{
     containerStyles: string, 
     iconStyles: string
 }

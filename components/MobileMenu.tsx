@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { keys, socialLinks } from "@/constants/constants";
 import { Lora } from "next/font/google";
 import Theme from "./Theme";
+import LanguageDropdownMenu from "./LanguageDropdownMenu";
 
 const lora = Lora({ subsets: ["latin"] });
 
@@ -31,6 +32,13 @@ const MobileMenu = () => {
         <div className="tablet:hidden">
             <div className="flex justify-center items-center gap-6">
                 {/* toogle button */}
+                <LanguageDropdownMenu
+                    containerStyles="border-grey-700 
+                    hover:scale-105 hover:border-brown
+                    dark:border-brown-700 dark:hover:border-brown"
+                    iconStyles="text-grey-700 hover:text-brown
+                    dark:text-brown-700 dark:hover:text-brown"
+                />
                 <Theme
                     containerStyles="w-9 h-9 rounded-full flex justify-center items-center
                     border-2 border-grey-700 
@@ -66,6 +74,7 @@ const MobileMenu = () => {
                     ulStyles="flex-col gap-5"
                     showTheme={false}
                     toogleMenu={toogleMenu}
+                    showLanguageMenu={false}
                 />
                 <div className={`${lora.className} w-full h-20 flex justify-between items-center border-t border-brown px-7`}>
                     {

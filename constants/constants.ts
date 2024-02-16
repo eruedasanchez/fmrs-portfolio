@@ -415,6 +415,21 @@ export const contactData = [
     
 ];
 
+export const languages = [
+    {
+        title: "English",
+        flag: "/uk.png"
+    },
+    {
+        title: "Spanish",
+        flag: "/spanish.png"
+    },
+    {
+        title: "Norge",
+        flag: "/norge.png"
+    }
+]
+
 export const keys = {
     LEFT: 'ArrowLeft',
     RIGHT: 'ArrowRight',
