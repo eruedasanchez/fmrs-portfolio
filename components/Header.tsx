@@ -1,3 +1,6 @@
+// 'use client';
+
+// import dynamic from "next/dynamic";
 import MobileMenu from "./MobileMenu";
 import Navbar from "./Navbar";
 import Logo from "./Logo";

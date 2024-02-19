@@ -1,11 +1,11 @@
 'use client';
 
 import Link from "next/link";
-import NavLink from "./NavLink";
 import { NavbarProps } from "@/types/types";
 import { navLinks } from "@/constants/constants";
 import { Phone } from "lucide-react";
 import { Lora } from "next/font/google";
+import NavLink from "./NavLink";
 import Theme from "./Theme";
 import LanguageDropdownMenu from "./LanguageDropdownMenu";
 

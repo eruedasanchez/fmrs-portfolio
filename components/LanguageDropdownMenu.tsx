@@ -1,21 +1,31 @@
+'use client';
+
 import { languages } from "@/constants/constants";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Lora } from "next/font/google";
-import { LanguageDropdownMenuProps } from "@/types/types";
-
-interface LanguageData {
-    title: string,
-    flag: string
-}
+import { LanguageData, LanguageDropdownMenuProps } from "@/types/types";
+import LanguageLink from "./LanguageLink";
+import { useLocale } from "next-intl";
 
 const lora = Lora({ subsets: ["latin"] });
 
 const LanguageDropdownMenu = ({containerStyles, iconStyles} : LanguageDropdownMenuProps) => {
     const [currentLanguageFlag, setCurrentLanguageFlag] = useState(languages[0].flag);
     const [isOpen, setIsOpen] = useState(false);
+    
+    const currentLocale = useLocale();
+    
+    useEffect(() => {
+        setCurrentLanguageFlag(getFlagByLocale(currentLocale));
+    }, [currentLocale]);
 
+    const getFlagByLocale = (locale: string): string => {
+        const language = languages.find(lang => lang.isoCode === locale);
+        return language ? language.flag : "";
+    }
+    
     const handleChangeLanguage = (language: LanguageData): void => {
         setIsOpen(isOpen => !isOpen);
         setCurrentLanguageFlag(language.flag);
@@ -43,25 +53,9 @@ const LanguageDropdownMenu = ({containerStyles, iconStyles} : LanguageDropdownMe
             <div className={`text-grey-600 transition-all duration-1000 
             ${isOpen ? 'max-h-[155px] opacity-100 p-1 my-2' : 'max-h-0 opacity-0'}`}
             >
-                {
-                    languages.map((language, index) => (
-                        <div 
-                            key={index} 
-                            className="flex w-full h-1/2 justify-between px-1 py-1 mb-2
-                            cursor-pointer border-l-transparent border-l-2
-                            hover:border-l-brown-700 hover:transition-all hover:duration-700"
-                            onClick={() => handleChangeLanguage(language)}
-                        >
-                            <h3 className="text-sm font-light text-gray-700 dark:text-peach-500 ">{language.title}</h3>
-                            <Image
-                                src={language.flag}
-                                alt={language.title}
-                                width={20}
-                                height={20}
-                            />
-                        </div>
-                    ))
-                }
+                <LanguageLink index={0} locale="en" handleChangeLanguage={handleChangeLanguage}/>
+                <LanguageLink index={1} locale="es" handleChangeLanguage={handleChangeLanguage}/>
+                <LanguageLink index={2} locale="no" handleChangeLanguage={handleChangeLanguage}/>
             </div>
         </div>
     );

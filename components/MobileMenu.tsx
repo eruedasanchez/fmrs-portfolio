@@ -16,7 +16,7 @@ const MobileMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     
     const toogleMenu = () => setIsOpen(!isOpen);
-
+    
     const handleKeyDown = useCallback((event: KeyboardEvent) => {
         if (event.key === keys.ESC) setIsOpen(false); 
     }, [setIsOpen]);
@@ -27,6 +27,8 @@ const MobileMenu = () => {
             document.removeEventListener('keydown', handleKeyDown);
         };
     }, [handleKeyDown]);
+
+
     
     return (
         <div className="tablet:hidden">

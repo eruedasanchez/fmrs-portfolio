@@ -418,15 +418,18 @@ export const contactData = [
 export const languages = [
     {
         title: "English",
-        flag: "/uk.png"
+        flag: "/uk.png",
+        isoCode: "en"
     },
     {
         title: "Spanish",
-        flag: "/spanish.png"
+        flag: "/spanish.png",
+        isoCode: "es"
     },
     {
         title: "Norge",
-        flag: "/norge.png"
+        flag: "/norge.png",
+        isoCode: "no"
     }
 ]
 

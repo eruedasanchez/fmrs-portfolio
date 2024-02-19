@@ -1,3 +1,4 @@
+import { locales } from "@/navigation";
 import { LucideIcon } from "lucide-react";
 import React from "react";
 
@@ -131,6 +132,14 @@ export interface LanguageDropdownMenuProps{
     containerStyles: string, 
     iconStyles: string
 }
+
+
+export interface LanguageData{
+    title: string,
+    flag: string
+}
+
+
 
 
 
